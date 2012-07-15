@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block page_title %}Article Detail{% endblock %}
+{% block header %}
+<h1>Article Detail</h1>
+{% endblock %}
+{% block main %}
+<h2>{{ object.title }}</h2>
+<h3>Authors</h3>
+<p>
+{% for order in object.order_set.all %}
+{{ order.author.last_name }} {{ order.author.initials }}{% if forloop.last %}{% else %}, {% endif %}
+{% endfor %}
+</p>
+<h3>Journal: {{ object.journal }}</h3>
+<p>{{ object.abstract }}</p>
+{% endblock %}

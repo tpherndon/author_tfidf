@@ -1,0 +1,1001 @@
+[
+    {
+        "abstract": "Current practices of reporting critical laboratory values make it challenging to measure and assess the timeliness of receipt by the treating physician as required by The Joint Commission's 2008 National Patient Safety Goals.\nA multidisciplinary team of laboratorians, clinicians, and information technology experts developed an electronic ALERTS system that reports critical values via the laboratory and hospital information systems to alphanumeric pagers of clinicians and ensures failsafe notification, instant documentation, automatic tracking, escalation, and reporting of critical value alerts. A method for automated acknowledgment of message receipt was incorporated into the system design.\nThe ALERTS system has been applied to inpatients and eliminated approximately 9000 phone calls a year made by medical technologists. Although a small number of phone calls were still made as a result of pages not acknowledged by clinicians within 10 min, they were made by telephone operators, who either contacted the same physician who was initially paged by the automated system or identified and contacted alternate physicians or the patient's nurse. Overall, documentation of physician acknowledgment of receipt in the electronic medical record increased to 95% of critical values over 9 months, while the median time decreased to <3 min.\nWe improved laboratory efficiency and physician communication by developing an electronic system for reporting of critical values that is in compliance with The Joint Commission's goals.", 
+        "authors": [
+            "Parl FF", 
+            "O'Leary MF", 
+            "Kaiser AB", 
+            "Paulett JM", 
+            "Statnikova K", 
+            "Shultz EK"
+        ], 
+        "journal": "Clin. Chem.", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/20040617", 
+        "title": "Implementation of a closed-loop reporting system for critical values and clinical communication in compliance with goals of the joint commission."
+    }, 
+    {
+        "abstract": "Modern healthcare organizations (HCOs) are composed of complex dynamic teams to ensure clinical operations are executed in a quick and competent manner. At the same time, the fluid nature of such environments hinders administrators' efforts to define access control policies that appropriately balance patient privacy and healthcare functions. Manual efforts to define these policies are labor-intensive and error-prone, often resulting in systems that endow certain care providers with overly broad access to patients' medical records while restricting other providers from legitimate and timely use. In this work, we propose an alternative method to generate these policies by automatically mining usage patterns from electronic health record (EHR) systems. EHR systems are increasingly being integrated into clinical environments and our approach is designed to be generalizable across HCOs, thus assisting in the design and evaluation of local access control policies. Our technique, which is grounded in data mining and social network analysis theory, extracts a statistical model of the organization from the access logs of its EHRs. In doing so, our approach enables the review of predefined policies, as well as the discovery of unknown behaviors. We evaluate our approach with 5 months of access logs from the Vanderbilt University Medical Center and confirm the existence of stable social structures and intuitive business operations. Additionally, we demonstrate that there is significant turnover in the interactions between users in the HCO and that policies learned at the department-level afford greater stability over time.", 
+        "authors": [
+            "Malin B", 
+            "Nyemba S", 
+            "Paulett JM"
+        ], 
+        "journal": "J Biomed Inform", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/21277996", 
+        "title": "Learning relational policies from electronic health record access logs."
+    }, 
+    {
+        "abstract": "Speech recognition systems have become increasingly popular as a means to produce radiology reports, for reasons both of efficiency and of cost. However, the suboptimal recognition accuracy of these systems can affect the productivity of the radiologists creating the text reports. We analyzed a database of over two million de-identified radiology reports to determine the strongest determinants of word frequency. Our results showed that body site and imaging modality had a similar influence on the frequency of words and of three-word phrases as did the identity of the speaker. These findings suggest that the accuracy of speech recognition systems could be significantly enhanced by further tailoring their language models to body site and imaging modality, which are readily available at the time of report creation.", 
+        "authors": [
+            "Paulett JM", 
+            "Langlotz CP"
+        ], 
+        "journal": "J Biomed Inform", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/18761109", 
+        "title": "Improving language models for radiology speech recognition."
+    }, 
+    {
+        "abstract": "The aim of this study was to determine the feasibility of automated detection of adrenal nodules, a common finding on CT, using a newly developed search engine that mines dictated radiology reports. To ensure Health Insurance Portability and Accountability Act compliance, we utilized a preexisting de-identified database of 32,974 CT reports from February 1, 2009 to February 28, 2010. Common adrenal descriptors from 29 staff radiologists were used to develop an automated rule-based algorithm targeting adrenal findings. Each sentence within the free text of reports was searched with an adapted NegEx negation algorithm. The algorithm was refined using a 2-week test period of reports and subsequently validated using a 6-week period. Manual review of the 3,693 CT reports in the validation period identified 222 positive reports while the algorithm detected 238 positive reports. The algorithm identified one true positive report missed on manual review for a total of 223 true positive reports. This resulted in a precision of 91% (217 of 238) and a recall of 97% (217 of 223). The sensitivity of the query was 97.3% (95% confidence interval (CI), 93.9-98.9%), and the specificity was 99.3% (95% CI, 99.1-99.6%). The positive predictive value of the algorithm was 91.0% (95% CI, 86.6-94.3%), and the negative predictive value was 99.8% (95% CI, 99.6-99.9%). The prevalence of true positive adrenal findings identified by the query (7.1%) was nearly identical to the true prevalence (7.2%). Automated detection of language describing common findings in imaging reports, such as adrenal nodules on CT, is feasible.", 
+        "authors": [
+            "Zopf JJ", 
+            "Langer JM", 
+            "Boonn WW", 
+            "Kim W", 
+            "Zafar HM"
+        ], 
+        "journal": "J Digit Imaging", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/22042494", 
+        "title": "Development of Automated Detection of Radiology Reports Citing Adrenal Findings."
+    }, 
+    {
+        "abstract": "The goal of this study was to develop and validate text-mining algorithms to automatically identify radiology reports containing critical results including tension or increasing/new large pneumothorax, acute pulmonary embolism, acute cholecystitis, acute appendicitis, ectopic pregnancy, scrotal torsion, unexplained free intraperitoneal air, new or increasing intracranial hemorrhage, and malpositioned tubes and lines. The algorithms were developed using rule-based approaches and designed to search for common words and phrases in radiology reports that indicate critical results. Certain text-mining features were utilized such as wildcards, stemming, negation detection, proximity matching, and expanded searches with applicable synonyms. To further improve accuracy, the algorithms utilized modality and exam-specific queries, searched under the \"Impression\" field of the radiology report, and excluded reports with a low level of diagnostic certainty. Algorithm accuracy was determined using precision, recall, and F-measure using human review as the reference standard. The overall accuracy (F-measure) of the algorithms ranged from 81% to 100%, with a mean precision and recall of 96% and 91%, respectively. These algorithms can be applied to radiology report databases for quality assurance and accreditation, integrated with existing dashboards for display and monitoring, and ported to other institutions for their own use.", 
+        "authors": [
+            "Lakhani P", 
+            "Kim W", 
+            "Langlotz CP"
+        ], 
+        "journal": "J Digit Imaging", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/22038514", 
+        "title": "Automated Detection of Critical Results in Radiology Reports."
+    }, 
+    {
+        "abstract": "Imaging centers nationwide are seeking innovative means to record and monitor computed tomography (CT)-related radiation dose in light of multiple instances of patient overexposure to medical radiation. As a solution, we have developed RADIANCE, an automated pipeline for extraction, archival, and reporting of CT-related dose parameters. Estimation of whole-body effective dose from CT dose length product (DLP)-an indirect estimate of radiation dose-requires anatomy-specific conversion factors that cannot be applied to total DLP, but instead necessitate individual anatomy-based DLPs. A challenge exists because the total DLP reported on a dose sheet often includes multiple separate examinations (e.g., chest CT followed by abdominopelvic CT). Furthermore, the individual reported series DLPs may not be clearly or consistently labeled. For example, \"arterial\" could refer to the arterial phase of the triple liver CT or the arterial phase of a CT angiogram. To address this problem, we have designed an intelligent algorithm to parse dose sheets for multi-series CT examinations and correctly separate the total DLP into its anatomic components. The algorithm uses information from the departmental PACS to determine how many distinct CT examinations were concurrently performed. Then, it matches the number of distinct accession numbers to the series that were acquired and anatomically matches individual series DLPs to their appropriate CT examinations. This algorithm allows for more accurate dose analytics, but there remain instances where automatic sorting is not feasible. To ultimately improve radiology patient care, we must standardize series names and exam names to unequivocally sort exams by anatomy and correctly estimate whole-body effective dose.", 
+        "authors": [
+            "Cook TS", 
+            "Zimmerman SL", 
+            "Steingall SR", 
+            "Boonn WW", 
+            "Kim W"
+        ], 
+        "journal": "J Digit Imaging", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/21796491", 
+        "title": "An Algorithm for Intelligent Sorting of CT-Related Dose Parameters."
+    }, 
+    {
+        "abstract": "Radiology residency and fellowship training provides a unique opportunity to evaluate trainee performance and determine the impact of various educational interventions. We have developed a simple software application (Orion) using open-source tools to facilitate the identification and monitoring of resident and fellow discrepancies in on-call preliminary reports. Over a 6-month period, 19,200 on-call studies were interpreted by 20 radiology residents, and 13,953 on-call studies were interpreted by 25 board-certified radiology fellows representing eight subspecialties. Using standard review macros during faculty interpretation, each of these reports was classified as \"agreement\", \"minor discrepancy\", and \"major discrepancy\" based on the potential to impact patient management or outcome. Major discrepancy rates were used to establish benchmarks for resident and fellow performance by year of training, modality, and subspecialty, and to identify residents and fellows demonstrating a significantly higher major discrepancy rate compared with their classmates. Trends in discrepancies were used to identify subspecialty-specific areas of increased major discrepancy rates in an effort to tailor the didactic and case-based curriculum. A series of missed-case conferences were developed based on trends in discrepancies, and the impact of these conferences is currently being evaluated. Orion is a powerful information technology tool that can be used by residency program directors, fellowship programs directors, residents, and fellows to improve radiology education and training.", 
+        "authors": [
+            "Itri JN", 
+            "Kim W", 
+            "Scanlon MH"
+        ], 
+        "journal": "J Digit Imaging", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/21249419", 
+        "title": "Orion: a web-based application designed to monitor resident and fellow performance on-call."
+    }, 
+    {
+        "abstract": "Radiologists frequently search the Web to find information they need to improve their practice, and knowing the types of information they seek could be useful for evaluating Web resources. Our goal was to develop an automated method to categorize unstructured user queries using a controlled terminology and to infer the type of information users seek. We obtained the query logs from two commonly used Web resources for radiology. We created a computer algorithm to associate RadLex-controlled vocabulary terms with the user queries. Using the RadLex hierarchy, we determined the high-level category associated with each RadLex term to infer the type of information users were seeking. To test the hypothesis that the term category assignments to user queries are non-random, we compared the distributions of the term categories in RadLex with those in user queries using the chi square test. Of the 29,669 unique search terms found in user queries, 15,445 (52%) could be mapped to one or more RadLex terms by our algorithm. Each query contained an average of one to two RadLex terms, and the dominant categories of RadLex terms in user queries were diseases and anatomy. While the same types of RadLex terms were predominant in both RadLex itself and user queries, the distribution of types of terms in user queries and RadLex were significantly different (p\u2009<\u20090.0001). We conclude that RadLex can enable processing and categorization of user queries of Web resources and enable understanding the types of information users seek from radiology knowledge resources on the Web.", 
+        "authors": [
+            "Rubin DL", 
+            "Flanders A", 
+            "Kim W", 
+            "Siddiqui KM", 
+            "Kahn CE"
+        ], 
+        "journal": "J Digit Imaging", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/20354755", 
+        "title": "Ontology-assisted analysis of Web queries to determine the knowledge radiologists seek."
+    }, 
+    {
+        "abstract": "There is growing interest in the ability to monitor, track, and report exposure to radiation from medical imaging. Historically, however, dose information has been stored on an image-based dose sheet, an arrangement that precludes widespread indexing. Although scanner manufacturers are beginning to include dose-related parameters in the Digital Imaging and Communications in Medicine (DICOM) headers of imaging studies, there remains a vast repository of retrospective computed tomographic (CT) data with image-based dose sheets. Consequently, it is difficult for imaging centers to monitor their dose estimates or participate in the American College of Radiology (ACR) Dose Index Registry. An automated extraction software pipeline known as Radiation Dose Intelligent Analytics for CT Examinations (RADIANCE) has been designed that quickly and accurately parses CT dose sheets to extract and archive dose-related parameters. Optical character recognition of information in the dose sheet leads to creation of a text file, which along with the DICOM study header is parsed to extract dose-related data. The data are then stored in a relational database that can be queried for dose monitoring and report creation. RADIANCE allows efficient dose analysis of CT examinations and more effective education of technologists, radiologists, and referring physicians regarding patient exposure to radiation at CT. RADIANCE also allows compliance with the ACR's dose reporting guidelines and greater awareness of patient radiation dose, ultimately resulting in improved patient care and treatment. \u00a9 RSNA, 2011.", 
+        "authors": [
+            "Cook TS", 
+            "Zimmerman SL", 
+            "Steingall SR", 
+            "Maidment AD", 
+            "Kim W", 
+            "Boonn WW"
+        ], 
+        "journal": "Radiographics", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/21969661", 
+        "title": "Informatics in Radiology: RADIANCE: An Automated, Enterprise-wide Solution for Archiving and Reporting CT Radiation Dose Estimates."
+    }, 
+    {
+        "abstract": "Quantitative and descriptive imaging data are a vital component of the radiology report and are frequently of paramount importance to the ordering physician. Unfortunately, current methods of recording these data in the report are both inefficient and error prone. In addition, the free-text, unstructured format of a radiology report makes aggregate analysis of data from multiple reports difficult or even impossible without manual intervention. A structured reporting work flow has been developed that allows quantitative data created at an advanced imaging workstation to be seamlessly integrated into the radiology report with minimal radiologist intervention. As an intermediary step between the workstation and the reporting software, quantitative and descriptive data are converted into an extensible markup language (XML) file in a standardized format specified by the Annotation and Image Markup (AIM) project of the National Institutes of Health Cancer Biomedical Informatics Grid. The AIM standard was created to allow image annotation data to be stored in a uniform machine-readable format. These XML files containing imaging data can also be stored on a local database for data mining and analysis. This structured work flow solution has the potential to improve radiologist efficiency, reduce errors, and facilitate storage of quantitative and descriptive imaging data for research.", 
+        "authors": [
+            "Zimmerman SL", 
+            "Kim W", 
+            "Boonn WW"
+        ], 
+        "journal": "Radiographics", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/21357413", 
+        "title": "Informatics in radiology: automated structured reporting of imaging findings using the AIM standard and XML."
+    }, 
+    {
+        "abstract": "Exposure to radiation as a result of medical imaging is currently in the spotlight, receiving attention from Congress as well as the lay press. Although scanner manufacturers are moving toward including effective dose information in the Digital Imaging and Communications in Medicine headers of imaging studies, there is a vast repository of retrospective CT data at every imaging center that stores dose information in an image-based dose sheet. As such, it is difficult for imaging centers to participate in the ACR's Dose Index Registry. The authors have designed an automated extraction system to query their PACS archive and parse CT examinations to extract the dose information stored in each dose sheet. First, an open-source optical character recognition program processes each dose sheet and converts the information to American Standard Code for Information Interchange (ASCII) text. Each text file is parsed, and radiation dose information is extracted and stored in a database which can be queried using an existing pathology and radiology enterprise search tool. Using this automated extraction pipeline, it is possible to perform dose analysis on the >800,000 CT examinations in the PACS archive and generate dose reports for all of these patients. It is also possible to more effectively educate technologists, radiologists, and referring physicians about exposure to radiation from CT by generating report cards for interpreted and performed studies. The automated extraction pipeline enables compliance with the ACR's reporting guidelines and greater awareness of radiation dose to patients, thus resulting in improved patient care and management.", 
+        "authors": [
+            "Cook TS", 
+            "Zimmerman S", 
+            "Maidment AD", 
+            "Kim W", 
+            "Boonn WW"
+        ], 
+        "journal": "J Am Coll Radiol", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/21040869", 
+        "title": "Automated extraction of radiation dose information for CT examinations."
+    }, 
+    {
+        "abstract": "The purpose of this study was to evaluate the impact of implementing an automated process for generating coronal and sagittal reformatted images on radiologist workflow. When performing trauma-related CT examinations of the cervical, thoracic, and lumbar spine at our institution, technologists manually generate coronal and sagittal reconstructions at the scanner console and send these images to a picture archiving and communication system (PACS) for interpretation by radiologists and clinical viewing. Although certain PACS, thin-client three-dimensional systems, and CT scanners are capable of automatically generating reconstructed or reformatted images, the systems at our institution do not support this functionality. We have recently integrated a dedicated server that is capable of automatically generating multiplanar reformatted (MPR) images from source thin-section axial images and sending these images to PACS without requiring technologist input. This dedicated server was used to generate coronal and sagittal MPRs for trauma-related spine studies in parallel with technologist-generated coronal and sagittal reconstructions. When comparing the two methods, using the dedicated server to automatically generate reformations resulted in substantial time savings for the radiologist compared to technologist-generated reconstructions. Additionally, a survey of interpreting radiologists indicated that a significant majority preferred to view the automatically generated MPRs on PACS compared to the thin-client system, considered the image quality to be good or excellent, and believed that viewing MPRs increased diagnostic accuracy and confidence. It is expected that this automated process will significantly improve radiologist workflow with respect to image interpretation time and report turnaround time.", 
+        "authors": [
+            "Itri JN", 
+            "Boonn WW"
+        ], 
+        "journal": "J Digit Imaging", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/20393869", 
+        "title": "Use of a Dedicated Server to Perform Coronal and Sagittal Reformations in Trauma Examinations."
+    }, 
+    {
+        "abstract": "Multidetector ECG-gated CT angiography permits imaging of structures such as the coronary arteries and pulmonary veins with peripheral administration of contrast media. Respiratory motion artifact limits the applicability of this technique in critically ill patients due to an inability to cooperate with prolonged breath holds necessary for quality images. A case in which high-frequency jet ventilation via an uncuffed tracheostomy tube in an unmedicated patient permitted respiratory immobilization sufficient to acquire diagnostic images, is presented.", 
+        "authors": [
+            "Mandel JE", 
+            "Perry I", 
+            "Boonn WW", 
+            "Litt H"
+        ], 
+        "journal": "J Clin Anesth", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/20122593", 
+        "title": "Use of high-frequency jet ventilation for respiratory immobilization during coronary artery CT angiography."
+    }, 
+    {
+        "abstract": "Given the increasing volume of radiological exams, the decreasing frequency of direct communication with the referring provider, and the distribution of patient data over many clinical systems, radiologists often do not have adequate clinical information at the time of interpretation. We have performed a survey of radiologists to determine the need and actual utilization of patient data at the time of image interpretation. Our findings demonstrate that most radiologists want more clinical information when interpreting images and that this information would impact their report, but they are discouraged by the time it takes to access this information. In addition, current mechanisms for monitoring necessary patient follow-up are inadequate.", 
+        "authors": [
+            "Boonn WW", 
+            "Langlotz CP"
+        ], 
+        "journal": "J Digit Imaging", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/18459002", 
+        "title": "Radiologist use of and perceived need for patient data access."
+    }, 
+    {
+        "abstract": "There has been widespread adoption of personal digital assistants (PDAs) within medicine in recent years. However, information on the prevalence and usage of these devices among radiologists is limited. A survey was designed and mailed to randomly selected members of the Radiological Society of North America to determine the percentage of PDA users, their use patterns, and the types of applications that they would like to see in the future. The use patterns of attending radiologists were compared with those of trainees (residents and fellows). Overall usage was also compared with the relevant findings in two surveys of internal medicine users. It was found that slightly less than one-half of respondents used PDAs on a daily basis, a finding that was comparable to that in the internal medicine surveys. However, less than one-quarter of PDA users had radiology-specific applications installed on their devices, whereas a greater percentage of internal medicine users had software such as drug databases and clinical references on their PDAs. Radiology trainees had a higher rate of both PDA ownership and radiology application usage than did attending radiologists. It is likely that, as PDA hardware becomes more powerful, with higher display resolution, better wireless networking capabilities, and greater memory capacity, PDA ownership as well as radiology application usage will increase.", 
+        "authors": [
+            "Boonn WW", 
+            "Flanders AE"
+        ], 
+        "journal": "Radiographics", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/15798069", 
+        "title": "Informatics in radiology (infoRAD): survey of personal digital assistant use in radiology."
+    }, 
+    {
+        "abstract": "MR microscopy at 9.4T depicts the architecture of the brain in exquisite detail, including the individual laminae of the cortex, the individual nuclei of the basal ganglia, the thalami, subthalami and metathalami, and the orientations and relationship among the dominant nuclei and white matter tracts of the brain. The authors believe that these anatomic relations will ultimately be displayed in vivo as clinical MR scanners begin to operate at field strengths of 4.7T, 7T, and 8T. Then, those familiar with this anatomy will be able to interpret patient images with far greater sophistication.", 
+        "authors": [
+            "Fatterpekar GM", 
+            "Delman BN", 
+            "Boonn WW", 
+            "Gultekin SH", 
+            "Fayad ZA", 
+            "Hoff PR", 
+            "Naidich TP"
+        ], 
+        "journal": "Magn Reson Imaging Clin N Am", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/15018115", 
+        "title": "MR microscopy of normal human brain."
+    }, 
+    {
+        "abstract": "The Digital Imaging and Communications in Medicine (DICOM) Standard is a key foundational technology for radiology. However, its complexity creates challenges for information system developers because the current DICOM specification requires human interpretation and is subject to nonstandard implementation. To address this problem, a formally sound and computationally accessible information model of the DICOM Standard was created. The DICOM Standard was modeled as an ontology, a machine-accessible and human-interpretable representation that may be viewed and manipulated by information-modeling tools. The DICOM Ontology includes a real-world model and a DICOM entity model. The real-world model describes patients, studies, images, and other features of medical imaging. The DICOM entity model describes connections between real-world entities and the classes that model the corresponding DICOM information entities. The DICOM Ontology was created to support the Cancer Biomedical Informatics Grid (caBIG) initiative, and it may be extended to encompass the entire DICOM Standard and serve as a foundation of medical imaging systems for research and patient care.", 
+        "authors": [
+            "Kahn CE", 
+            "Langlotz CP", 
+            "Channin DS", 
+            "Rubin DL"
+        ], 
+        "journal": "Radiographics", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/20980665", 
+        "title": "Informatics in radiology: an information model of the DICOM standard."
+    }, 
+    {
+        "abstract": "The aim of this study was to determine the frequency of radiology reports that contain nonroutine communications of results and categorize the urgency of such communications.\nA rule-based text-query algorithm was applied to a database of 2.3 million radiology reports, which has an accuracy of 98% for classifying reports containing documentation of communications. The frequency of such communications by year, modality, and study type was then determined. Finally, 200 random reports selected by the algorithm were analyzed, and reports containing critical results were categorized according to ascending levels of urgency.\nCritical or noncritical results to health care providers were present in 5.09% of radiology reports (116,184 of 2,282,923). For common modalities, documentation of communications were most frequent in CT (14.34% [57,537 of 402,060]), followed by ultrasound (9.55% [17,814 of 186,626]), MRI (5.50% [13,697 of 248,833]), and chest radiography (1.57% [19,840 of 1,262,925]). From 1997 to 2005, there was an increase in reports containing such communications (3.04% in 1997, 6.82% in 2005). More reports contained nonroutine communications in single-view chest radiography (1.29% [5,533 of 428,377]) than frontal/lateral chest radiography (0.80% [1,815 of 226,837]), diagnostic mammography (9.42% [3,662 of 38,877]) than screening mammography (0.47% [289 of 61,114]), and head CT (26.21% [20,963 of 79,985]) than abdominal CT (15.05% [19,871 of 132,034]) or chest CT (5.33% [3,017 of 56,613]). All of these results were statistically significant (P < .00001). Of 200 random radiology reports indicating nonroutine communications, 155 (78%) had critical and 45 (22%) had noncritical results. Regarding level of urgency, 94 of 155 reports (60.6%) with critical results were categorized as high urgency, 31 (20.0%) as low urgency, 26 (16.8%) as medium urgency, and 4 (2.6%) as discrepant.\nFrom 1997 to 2005, there was a significant increase in documentation of nonroutine communications, which may be due to increasing compliance with ACR guidelines. Most reports with nonroutine communications contain critical findings.", 
+        "authors": [
+            "Lakhani P", 
+            "Langlotz CP"
+        ], 
+        "journal": "J Am Coll Radiol", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/20889108", 
+        "title": "Documentation of nonroutine communications of critical or significant radiology results: a multiyear experience at a tertiary hospital."
+    }, 
+    {
+        "abstract": "", 
+        "authors": [
+            "Langlotz CP"
+        ], 
+        "journal": "J Am Coll Radiol", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/19945041", 
+        "title": "ACR BI-RADS for breast imaging communication: a roadmap for the rest of radiology."
+    }, 
+    {
+        "abstract": "At many institutions, clerical personnel manually enter clinical histories into radiology information systems during the process of scheduling examinations. For outpatients, radiologists use this information as their primary source of clinical histories. The purpose of this study was to determine the discrepancy rate between these manually recorded clinical histories and paper request slips, thereby assessing the accuracy of the clinical information used by radiologists at the time of interpretation.\nA total of 129 imaging request slips for CT scans were randomly selected from 7 days in February and March 2007. The clinical history on each request slip was compared with the clinical history manually entered into the radiology information system. Discrepancies between paper request slips and the electronic information available to radiologists were placed into 4 categories: 1) no discrepancy, 2) electronic or paper history incomplete, 3) disagreement between electronic and paper information, and 4) other. Incomplete or discrepant histories were further subcategorized on the basis of whether they were clinically significant.\nThirty-eight percent of studies (49 of 129) had no discrepancies between the paper request slips and the manually entered electronic information. The remaining 62% of studies (80 of 129) had incomplete or discrepant clinical histories. Forty-nine percent of studies (63 of 129) had incomplete electronic or paper information. Greater than half of those incomplete histories (36 of 63) were clinically significant. Ten percent of cases (13 of 129) showed frank disagreements between paper and electronic information. Sixty-nine percent of these (9 of 13) were clinically significant. Three percent of studies (4 of 129) showed other discrepancies whose clinical significance could not be categorized.\nThe manual entry of clinical information introduces a high rate of discrepancies, most of which are clinically significant. These discrepancies highlight the need for better communication between referring providers and radiologists.", 
+        "authors": [
+            "Agarwal R", 
+            "Bleshman MH", 
+            "Langlotz CP"
+        ], 
+        "journal": "J Am Coll Radiol", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/19878887", 
+        "title": "Comparison of two methods to transmit clinical history information from referring providers to radiologists."
+    }, 
+    {
+        "abstract": "The purpose of this investigation is to develop an automated method to accurately detect radiology reports that indicate non-routine communication of critical or significant results. Such a classification system would be valuable for performance monitoring and accreditation. Using a database of 2.3 million free-text radiology reports, a rule-based query algorithm was developed after analyzing hundreds of radiology reports that indicated communication of critical or significant results to a healthcare provider. This algorithm consisted of words and phrases used by radiologists to indicate such communications combined with specific handcrafted rules. This algorithm was iteratively refined and retested on hundreds of reports until the precision and recall did not significantly change between iterations. The algorithm was then validated on the entire database of 2.3 million reports, excluding those reports used during the testing and refinement process. Human review was used as the reference standard. The accuracy of this algorithm was determined using precision, recall, and F measure. Confidence intervals were calculated using the adjusted Wald method. The developed algorithm for detecting critical result communication has a precision of 97.0% (95% CI, 93.5-98.8%), recall 98.2% (95% CI, 93.4-100%), and F measure of 97.6% (\u00df=1). Our query algorithm is accurate for identifying radiology reports that contain non-routine communication of critical or significant results. This algorithm can be applied to a radiology reports database for quality control purposes and help satisfy accreditation requirements.", 
+        "authors": [
+            "Lakhani P", 
+            "Langlotz CP"
+        ], 
+        "journal": "J Digit Imaging", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/19826871", 
+        "title": "Automated detection of radiology reports that document non-routine communication of critical or significant results."
+    }, 
+    {
+        "abstract": "", 
+        "authors": [
+            "Langlotz CP"
+        ], 
+        "journal": "Radiology", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/19789252", 
+        "title": "Structured radiology reporting: are we there yet?"
+    }, 
+    {
+        "abstract": "The goals and current efforts of the Radiological Society of North America Radiology Reporting Committee are described. The committee's charter provides an opportunity to improve the organization, content, readability, and usefulness of the radiology report and to advance the efficiency and effectiveness of the reporting process.", 
+        "authors": [
+            "Kahn CE", 
+            "Langlotz CP", 
+            "Burnside ES", 
+            "Carrino JA", 
+            "Channin DS", 
+            "Hovsepian DM", 
+            "Rubin DL"
+        ], 
+        "journal": "Radiology", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/19717755", 
+        "title": "Toward best practices in radiology reporting."
+    }, 
+    {
+        "abstract": "", 
+        "authors": [
+            "Kundu S", 
+            "Itkin M", 
+            "Gervais DA", 
+            "Krishnamurthy VN", 
+            "Wallace MJ", 
+            "Cardella JF", 
+            "Rubin DL", 
+            "Langlotz CP"
+        ], 
+        "journal": "J Vasc Interv Radiol", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/19560008", 
+        "title": "The IR Radlex Project: an interventional radiology lexicon--a collaborative project of the Radiological Society of North America and the Society of Interventional Radiology."
+    }, 
+    {
+        "abstract": "", 
+        "authors": [
+            "Kundu S", 
+            "Itkin M", 
+            "Gervais DA", 
+            "Krishnamurthy VN", 
+            "Wallace MJ", 
+            "Cardella JF", 
+            "Rubin DL", 
+            "Langlotz CP"
+        ], 
+        "journal": "J Vasc Interv Radiol", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/19081735", 
+        "title": "The IR RadLex project: an interventional radiology lexicon--a collaborative project of the Radiological Society of North America and the Society of Interventional Radiology."
+    }, 
+    {
+        "abstract": "", 
+        "authors": [
+            "Weiss DL", 
+            "Langlotz CP"
+        ], 
+        "journal": "Radiology", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/19011178", 
+        "title": "Structured reporting: patient care enhancement or productivity nightmare?"
+    }, 
+    {
+        "abstract": "A radiology report is the official record documenting the contribution of a radiologist to a patient's care. The use of structured reports and a common lexicon will help referring physicians better understand the contents of reports. These same features in electronic health records will enable radiologists to mine reports for utilization management information as well as form the basis for clinical investigations.", 
+        "authors": [
+            "Dunnick NR", 
+            "Langlotz CP"
+        ], 
+        "journal": "J Am Coll Radiol", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/18442766", 
+        "title": "The radiology report of the future: a summary of the 2007 Intersociety Conference."
+    }, 
+    {
+        "abstract": "The interpretative reports rendered by radiologists are the only tangible manifestation of their expertise, training, and experience. These documents are very often the primary means by which radiologists provide patient care. Radiology reports are extremely variable in form, content, and quality. The authors propose a framework for conceptualizing the reporting process and how it might be improved. This consists of standard language, a structured format, and consistent content. These attributes will be realized by modifying the clinical reporting process, including the creation, storage, transmission, and review of interpretative documents. The authors also point out that changes in training and evaluation must be a part of the process, because they are complementary to purely technical solutions.", 
+        "authors": [
+            "Sistrom CL", 
+            "Langlotz CP"
+        ], 
+        "journal": "J Am Coll Radiol", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/17411786", 
+        "title": "A framework for improving radiology reporting."
+    }, 
+    {
+        "abstract": "", 
+        "authors": [
+            "Langlotz CP"
+        ], 
+        "journal": "Radiographics", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/17102038", 
+        "title": "RadLex: a new method for indexing online educational materials."
+    }, 
+    {
+        "abstract": "The Radiology Alliance for Health Services Research sponsored a symposium at the 2005 Annual Meeting of the Association of University Radiologists, which focused on the issue of aligning mentor and mentee expectations to foster successful mentoring relationships. This article presents a summary of the informal discussion of the panelists' individual experiences, common themes, and insights gained from the panel participants.", 
+        "authors": [
+            "Lee JM", 
+            "Anzai Y", 
+            "Langlotz CP"
+        ], 
+        "journal": "Acad Radiol", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/16627195", 
+        "title": "Mentoring the mentors: Aligning mentor and mentee expectations."
+    }, 
+    {
+        "abstract": "The purpose of this research was to develop queries that quantify the utilization of comparison imaging in free-text radiology reports. The queries searched for common phrases that indicate whether comparison imaging was utilized, not available, or not mentioned. The queries were iteratively refined and tested on random samples of 100 reports with human review as a reference standard until the precision and recall of the queries did not improve significantly between iterations. Then, query accuracy was assessed on a new random sample of 200 reports. Overall accuracy of the queries was 95.6%. The queries were then applied to a database of 1.8 million reports. Comparisons were made to prior images in 38.69% of the reports (693,955/1,793,754), were unavailable in 18.79% (337,028/1,793,754), and were not mentioned in 42.52% (762,771/1,793,754). The results show that queries of text reports can achieve greater than 95% accuracy in determining the utilization of prior images.", 
+        "authors": [
+            "Lakhani P", 
+            "Menschik ED", 
+            "Goldszal AF", 
+            "Murray JP", 
+            "Weiner MG", 
+            "Langlotz CP"
+        ], 
+        "journal": "J Digit Imaging", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/16132483", 
+        "title": "Development and validation of queries using structured query language (SQL) to determine the utilization of comparison imaging in radiology reports stored on PACS."
+    }, 
+    {
+        "abstract": "Measures of diagnostic accuracy, such as sensitivity, specificity, predictive values, and receiver operating characteristic curves, can often seem like abstract mathematic concepts that have a minimal relationship with clinical decision making or clinical research. The purpose of this article is to provide definitions and examples of these concepts that illustrate their usefulness in specific clinical decision-making tasks. In particular, nine principles are provided to guide the use of these concepts in daily radiology practice, in interpreting clinical literature, and in designing clinical research studies. An understanding of these principles and of the measures of diagnostic accuracy to which they apply is vital to the appropriate evaluation and use of diagnostic imaging examinations.", 
+        "authors": [
+            "Langlotz CP"
+        ], 
+        "journal": "Radiology", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/12832567", 
+        "title": "Fundamental measures of diagnostic examination performance: usefulness for clinical decision making and research."
+    }, 
+    {
+        "abstract": "The purpose of this study was to evaluate the effect of a switch to a filmless image management system on the time required for technologists to produce radiographic images in the emergency department (ED) after controlling for exam difficulty and a variable workload. Time and motion data were collected on patients who had radiographic images taken while being treated in the emergency department over the 3 1/2-year period from April 1997 to November 2000. Event times and demographic data were obtained from the radiology information system, from the hospital information system, from emergency department records, or by observation by research coordinators. Multiple least squares regression analysis identified several independent predictors of the time required for technologists to produce radiographic images. These variables included the level of technologist experience, the number of trauma-alert patient arrivals, and whether a filmless image management system was used (all P <.05). Our regression model explained 22% of the variability in technologist time (R2 Adjusted, 0.22; F = 24.01; P <.0001). The regression model predicted a time saving of 2 to 3 minutes per patient in the elapsed time from notification of a needed examination until image availability because of the implementation of PACS, a delay of 4 to 6 minutes per patient who were imaged by technologists who spent less than 10% of their work assignments within the ED, and a delay of 18 to 27 minutes in radiology workflow because of the arrival of a trauma alert patient. A filmless system decreased the amount of time required to produce radiographs. The arrival of a trauma alert patient delayed radiology workflow in the ED. Inexperienced technologists require 4 to 6 minutes of additional time per patient to complete the same amount of work accomplished by an experienced technologist.", 
+        "authors": [
+            "Redfern RO", 
+            "Langlotz CP", 
+            "Abbuhl SB", 
+            "Polansky M", 
+            "Horii SC", 
+            "Kundel HL"
+        ], 
+        "journal": "J Digit Imaging", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/12415466", 
+        "title": "The effect of PACS on the time required for technologists to produce radiographic images in the emergency department radiology suite."
+    }, 
+    {
+        "abstract": "Although most medical lexicons contain up to 80% of clinical terms used in an ambulatory patient medical records archive, preliminary research suggests that they may be far less complete for radiology terms. We therefore compared the likelihood that several existing medical lexicons would contain terms found in a radiology report to the likelihood they would contain terms found in an ambulatory care medical record. We used three samples of imaging terms to assess the completeness of existing lexicons for medical imaging: (1) a random sample of imaging terms from the Unified Medical Language System Large Scale Vocabulary Test (UMLS-LSVT; n = 218), (2) terms actually used in the first 80 clinical knee magnetic resonance imaging reports generated by the routine clinical use of a structured reporting system (eDictation, Marlton, NJ; n = 76), and (3) terms listed in a glossary of thoracic imaging prepared by the Fleischner Society (n = 173). Using the UMLS Web-based Knowledge Source Server (http://umlsks.nlm.nih. gov/), we measured the rate at which terms in each of the above three sources were found in the UMLS and two of its major constituent terminologies: ICD-9-CM and SNOMED International. ICD-9-CM contained matches for 3%, 8%, and 11% of terms from the Fleischner Society Glossary, eDictation, and NLM-LSVT, respectively. SNOMED International contained matches for 32%, 46%, and 36% of terms from the Fleischner Society Glossary, eDictation, and NLM-LSVT, respectively. The UMLS contained matches for 36%, 50%, and 45% of terms from the Fleischner Society Glossary, eDictation, and NLM-LSVT, respectively. The assessed vocabularies were least likely to contain a term from the Fleischner Society Glossary and most likely to contain a term from the eDictation lexicon. The UMLS was the most complete, and ICD-9 was the least complete of the three systems evaluated. No lexicon achieved greater than 50% completeness for any test set of imaging terms. Our results show that no single lexicon is sufficiently complete to allow comprehensive indexing, search, and retrieval of radiology report information. These results confirm the few results available from the medical literature indicating that existing controlled vocabularies are insufficiently complete to represent the contents of radiology reports. A subjective analysis of these results may identify particular imaging sub-areas for which new terms should be developed.", 
+        "authors": [
+            "Langlotz CP", 
+            "Caldwell SA"
+        ], 
+        "journal": "J Digit Imaging", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/12105728", 
+        "title": "The completeness of existing lexicons for representing radiology report information."
+    }, 
+    {
+        "abstract": "", 
+        "authors": [
+            "Langlotz CP"
+        ], 
+        "journal": "Radiology", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/12091655", 
+        "title": "Automatic structuring of radiology reports: harbinger of a second information revolution in radiology."
+    }, 
+    {
+        "abstract": "To compare the diagnostic accuracy of focused helical computed tomography (CT) with orally administered contrast material with that of nonfocused helical CT with orally and intravenously administered contrast material.\nAfter receiving oral contrast material, 228 patients with clinically suspected appendicitis underwent focused appendiceal CT (5-mm section thickness, 15-cm coverage in the right lower quadrant). Immediately thereafter, helical CT of the entire abdomen and pelvis was performed following intravenous administration of contrast material (abdomen, 7-mm section thickness; pelvis, 5-mm section thickness). Studies were separated and independently interpreted by three observers who were blinded to patient names. Diagnoses were established by means of surgical and/or clinical follow-up findings.\nFifty-one (22.4%) of 228 patients had acute appendicitis. Readers diagnosed appendicitis with 83.3%, 73.8%, and 71.4% sensitivity and 93.0%, 92.3%, and 97.9% specificity with focused nonenhanced appendiceal CT. Readers diagnosed appendicitis with 92.9%, 92.9%, and 88.1% sensitivity and 93.7%, 95.1%, and 96.5% specificity with nonfocused enhanced CT. Summary areas under the receiver operating characteristic curve estimates for focused nonenhanced and nonfocused enhanced CT were 0.916 and 0.964, respectively; the differences were statistically significant (P <.05) for two of three readers. All readers demonstrated higher sensitivities for detecting the inflamed appendix with nonfocused enhanced CT. Appendicitis was missed with focused CT in two patients whose inflamed appendix was not included in the imaging of the right lower quadrant. All readers were significantly more confident in diagnosing alternative conditions with nonfocused enhanced CT.\nDiagnostic accuracy of helical CT for acute appendicitis improved significantly with use of intravenous contrast material.", 
+        "authors": [
+            "Jacobs JE", 
+            "Birnbaum BA", 
+            "Macari M", 
+            "Megibow AJ", 
+            "Israel G", 
+            "Maki DD", 
+            "Aguiar AM", 
+            "Langlotz CP"
+        ], 
+        "journal": "Radiology", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/11526267", 
+        "title": "Acute appendicitis: comparison of helical CT diagnosis focused technique with oral contrast material versus nonfocused technique with oral and intravenous contrast material."
+    }, 
+    {
+        "abstract": "The purpose of this study was to determine whether the frequency of visualization of areae gastricae on double-contrast upper gastrointestinal tract examinations is related to a patient's age.\nA total of 141 double-contrast upper gastrointestinal tract examinations with normal findings were reviewed for the presence or absence of areae gastricae on double-contrast images of the stomach. All images were evaluated by two radiologists who were blinded to the age of the patients. The data were then analyzed to determine if the frequency of visualization of areae gastricae on double-contrast studies was significantly related to the age of patients.\nThe frequency of visualization of areae gastricae increased significantly with increasing age (p = 0.008). The youngest age group (20--29 years old) exhibited areae gastricae in only four (19%) of 21 cases, whereas the oldest age group (> or = 70 years old) exhibited areae gastricae in 19 (76%) of 25 cases. On average, the rate of visualization of areae gastricae on double-contrast studies increased by 9% per decade.\nOur data show that the frequency of visualization of areae gastricae on double-contrast upper gastrointestinal tract examinations increases significantly with increasing patient age. It is important for radiologists to be aware of the effect of aging on the delineation of areae gastricae on double-contrast studies.", 
+        "authors": [
+            "Charagundla SR", 
+            "Levine MS", 
+            "Langlotz CP", 
+            "Rubesin SE", 
+            "Laufer I"
+        ], 
+        "journal": "AJR Am J Roentgenol", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/11418398", 
+        "title": "Visualization of areae gastricae on double-contrast upper gastrointestinal radiography: relationship to age of patients."
+    }, 
+    {
+        "abstract": "The purpose of this study was to summarize the accuracy of magnetic resonance (MR) imaging for staging prostate cancer and to determine the effect of high magnetic field strength, use of the endorectal coil, use of fast spin-echo (SE) imaging, and study size on staging accuracy.\nA literature search and review yielded 27 studies comparing MR imaging to a pathologic standard in patients with clinically limited prostate cancer. Subgroup analyses examined magnetic field strength, use of an endorectal coil, use of fast SE imaging, publication date, and study size.\nA summary receiver operating characteristic curve for all studies had a maximum joint sensitivity and specificity of 74%. At a specificity of 80% on this curve, sensitivity was 69%. Subgroup analyses showed that fast SE imaging was statistically significantly more accurate than conventional SE techniques (P < .001). Unexpectedly, studies employing higher magnetic field strength and those employing an endorectal coil were less accurate.\nSeemingly small technologic advances may influence test accuracy. Early and small studies, however, may overstate accuracy because of publication bias, bias in small samples, or earlier studies being performed by the experts who developed the technology itself.", 
+        "authors": [
+            "Sonnad SS", 
+            "Langlotz CP", 
+            "Schwartz JS"
+        ], 
+        "journal": "Acad Radiol", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/11227643", 
+        "title": "Accuracy of MR imaging for staging prostate cancer: a meta-analysis to examine the effect of technologic change."
+    }, 
+    {
+        "abstract": "The purpose of this retrospective study was to estimate the economic consequences of evaluating suspected vocal cord paralysis with magnetic resonance (MR) imaging and computed tomography (CT).\nReports from MR imaging (n = 30) or CT (n = 19) studies of the neck in 49 patients were retrospectively reviewed for causes of vocal cord paralysis. The patients were divided into high-suspicion (n = 20) and low-suspicion (n = 29) groups, based on the presence or absence of a clinically detectable abnormality other than vocal cord immobility. Clinic and inpatient charts were examined to determine the work-up in all cases. The Medicare Resource-based Relative Value Scale was used to estimate the costs of most procedures.\nThe high-clinical-suspicion group included nine true-positive, four false-positive, seven true-negative, and no false-negative cases. Further work-up was performed in seven true-positive, three false-positive, and one true-negative cases. The total cost of immediate diagnostic work-up in these 20 patients, including MR imaging and/or CT, was $20,737 ($2,304 per true-positive case). The low-suspicion group included two true-positive, nine false-positive, 18 true-negative, and no false-negative cases. Further work-up was performed in both true-positive, four false-positive, and two true-negative cases. The total cost of immediate diagnostic work-up in these 29 patients was $21,698, (mean, $748; $10,849 per true-positive case).\nThe average cost of finding space-occupying lesions in patients with vocal cord paralysis is more than 4.5 times higher in patients without suspicious antecedent clinical findings than in those with such a history. The benefits of obtaining negative findings and of detecting a small number of space-occupying lesions should be weighed against the costs of such examinations and of additional work-up for false-positive findings.", 
+        "authors": [
+            "Liu AY", 
+            "Yousem DM", 
+            "Chalian AA", 
+            "Langlotz CP"
+        ], 
+        "journal": "Acad Radiol", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/11227642", 
+        "title": "Economic consequences of diagnostic imaging for vocal cord paralysis."
+    }, 
+    {
+        "abstract": "", 
+        "authors": [
+            "Thornbury JR", 
+            "Ornstein DK", 
+            "Choyke PL", 
+            "Langlotz CP", 
+            "Weinreb JC"
+        ], 
+        "journal": "AJR Am J Roentgenol", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/11133530", 
+        "title": "Prostate cancer: what is the future role for imaging?"
+    }, 
+    {
+        "abstract": "We have implemented a structured reporting system for medical imaging that replaces dictation and transcription by allowing radiologists and other imaging professionals to select imaging findings from medical lexicons. The system uses an imaging-specific information model called a Description Set to organize selected terms in a relational database. The system's expressiveness for reporting is enhanced by its ability to codify uncertainty about imaging observations and to represent explicit causal and associational relationships among imaging findings. The system promptly and automatically generates a text report that referring physicians are accustomed to receiving. Because the image report information is stored in a fully coded fashion, it can be used to provide real-time decision support to radiologists, to transmit coded imaging data to electronic patient record systems, to measure and improve radiologists' performance, and to index images by content.", 
+        "authors": [
+            "Langlotz CP", 
+            "Meininger L"
+        ], 
+        "journal": "Proc AMIA Symp", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/11079927", 
+        "title": "Enhancing the expressiveness and usability of structured image reporting systems."
+    }, 
+    {
+        "abstract": "", 
+        "authors": [
+            "Langlotz CP"
+        ], 
+        "journal": "Acad Radiol", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/11048884", 
+        "title": "Readings in clinical imaging research: a structured bibliography."
+    }, 
+    {
+        "abstract": "The authors performed this study to estimate, by using published data, the sensitivity and specificity of computed tomographic (CT) angiography in the evaluation of suspected acute pulmonary embolism (PE).\nSummary receiver operating characteristic (ROC) curve analysis was used to determine the sensitivity and specificity of CT angiography in the diagnosis of acute PE. Pulmonary angiography was used as the diagnostic standard of reference. The authors reviewed the results of 11 independent studies published in the English-language literature between January 1992 and June 1999.\nThe sensitivity of CT angiography in the diagnosis or exclusion of PE in the central pulmonary arteries (to the level of the segmental pulmonary arteries) ranged from 0.74 to 0.81 on the basis of specificities of 0.89-0.91. The sensitivity of CT angiography in the diagnosis or exclusion of PE in all pulmonary arteries (to the level of the subsegmental pulmonary arteries) was 0.68 on the basis of a specificity of 0.91.\nOn the basis of the studies in the current literature, most of which used 5.0-mm collimation and single-detector CT, CT angiography may be less accurate in the diagnosis of PE than previously reported. With improvements in data acquisition, particularly the use of thinner section collimation and multidetector CT, and in the increased use of workstations for data analysis, the accuracy and utility of CT angiography will require continued investigation.", 
+        "authors": [
+            "Harvey RT", 
+            "Gefter WB", 
+            "Hrung JM", 
+            "Langlotz CP"
+        ], 
+        "journal": "Acad Radiol", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/11048876", 
+        "title": "Accuracy of CT angiography versus pulmonary angiography in the diagnosis of acute pulmonary embolism: evaluation of the literature with summary ROC curve analysis."
+    }, 
+    {
+        "abstract": "The purpose of this work was to determine the costs of computed tomography (CT) procedures in a large academic radiology department, including both professional (PC) and technical (TC) components, by analyzing actual resource consumption using an activity-based costing (ABC) method and comparing them with Medicare payments.\nOver a 12 month period from July 1, 1996, to June 30, 1997, 1,011 CT procedures, representing 16 Physicians' Current Procedural Terminology (CPT) codes and 98.3% of CT studies performed, were carefully observed by a research assistant trained in ABC methodology. Information collected during these time and motion studies included personnel/machine time and direct materials used. Actual resource units used during the different activities in each CT procedure were valued using appropriate cost drivers. Unit values for both direct and overhead costs were calculated: the cost of an individual procedure equaled the sum of component costs. Costs were compared with PC and TC payments according to the 1997 Medicare Fee Schedule.\nTotal costs of CPT codes 70450 (CT Head unenhanced), 71260 (CT Chest enhanced), and 74160 (CT Abdomen enhanced), which represented 71.2% of CT studies performed, were $189.19, $273.53, and $343.20, respectively. For all 16 nonmodified CPT codes analyzed, Medicare's professional reimbursement was less than the professional cost, whereas its technical reimbursement exceeded respective cost in 14 of the 16 codes.\nIn the setting and time period studied, Medicare underreimbursed professional costs while overreimbursing technical costs.", 
+        "authors": [
+            "Nisenbaum HL", 
+            "Birnbaum BA", 
+            "Myers MM", 
+            "Grossman RI", 
+            "Gefter WB", 
+            "Langlotz CP"
+        ], 
+        "journal": "J Comput Assist Tomogr", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/11045708", 
+        "title": "The costs of CT procedures in an academic radiology department determined by an activity-based costing (ABC) method."
+    }, 
+    {
+        "abstract": "Our purpose was to reassess the usefulness of barium studies and various clinical parameters for differentiating primary from secondary achalasia.\nRadiology files from 1989 through 1999 revealed 29 patients with primary achalasia and 10 with secondary achalasia (caused by carcinoma of the esophagus in three, of the gastric cardia in three, of the lung in three, and of the uterus in one) who met our study criteria. The radiographs were reviewed to determine the morphologic features of the narrowed distal esophageal segment and gastric cardia and fundus. Medical records were also reviewed to determine the clinical presentation; endoscopic, manometric, and surgical findings; and treatment.\nThe mean patient age was 53 years in primary achalasia versus 69 years in secondary achalasia (p = 0.03). The mean duration of dysphagia was 4.5 years in primary achalasia versus 1.9 months in secondary achalasia (p <0.0001). The narrowed distal esophageal segment had a mean length of 1.9 cm in primary achalasia versus 4.4 cm in secondary achalasia (p < 0.0001), and the esophagus had a mean diameter of 6.2 cm in primary achalasia versus 4.1 cm in secondary achalasia (p <0.0001). The narrowed segment was eccentric or nodular or had abrupt proximal borders in only four of 10 patients with secondary achalasia, and evidence of tumor was present in the gastric fundus in only three.\nWhen findings of achalasia are present on barium studies, a narrowed distal esophageal segment longer than 3.5 cm with little or no proximal dilatation in a patient with recent onset of dysphagia should be considered highly suggestive of secondary achalasia, even in the absence of other suspicious radiographic findings.", 
+        "authors": [
+            "Woodfield CA", 
+            "Levine MS", 
+            "Rubesin SE", 
+            "Langlotz CP", 
+            "Laufer I"
+        ], 
+        "journal": "AJR Am J Roentgenol", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/10954457", 
+        "title": "Diagnosis of primary versus secondary achalasia: reassessment of clinical and radiographic criteria."
+    }, 
+    {
+        "abstract": "The overall goal of this research is to build a structured reporting system that reduces the cost, delays, and inconvenience associated with conventional dictation and speech recognition systems. We have implemented such a structured reporting system for radiology that replaces current dictation and transcription processes by allowing radiologists and other imaging professionals to select imaging findings from a medical lexicon. The system uses an imaging-specific information model, called a \"description set,' to organize selected terms in a relational database. Unique features of the knowledge representation that enhance its expressiveness include its ability to codify uncertainty about an imaging observation and to represent explicitly the logical relationships among imaging findings. In addition, the system does not require the user to fill in \"blanks' in a static text template. Instead, it allows entry of terms in arbitrary order and uses automated text-generation techniques to create a text report that referring physicians are accustomed to receiving. In parallel, the system also produces a multimedia report that the referring physician can use as a quick reference. Unlike the results of conventional dictation or speech recognition, each finding is coded in a relational database for later information processing. Thus, the structured report database can be used to index images by content, to provide real-time decision support, to enhance radiologists' performance, to conduct exploratory clinical research, and to transmit imaging report data to computer-based patient record systems.", 
+        "authors": [
+            "Langlotz CP"
+        ], 
+        "journal": "J Digit Imaging", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/10847362", 
+        "title": "Enhancing the expressiveness of structured reporting systems."
+    }, 
+    {
+        "abstract": "To assess whether variables such as unit occupancy and aggregate severity of illness that reflect increased work demands on physicians in medical intensive care units (MICU) are associated with increased delays in their obtaining information about nonroutine chest radiographic examinations. To determine whether the presence of a picture archiving and communication system (PACS) workstation in the MICU shortens those delays.\nA prospective cohort study stratified for presence or absence of PACS.\nMICU of a university hospital.\nA total of 118 patients admitted to the MICU who had nonroutine bedside chest radiographs.\nMultivariate analyses were conducted to determine how unit occupancy, patient acuity, the time of day the examination was taken, and the presence of a PACS workstation influenced the time from radiographic examination completion to the time when MICU physicians first obtained image information. In a multivariate analysis, patient acuity, unit occupancy, the aggregate level of severity of illness in the study cohort, whether the examination was taken at night or day, and the presence of a PACS workstation were significant predictors of the elapsed time from examination completion until review by MICU physicians. Without the PACS workstation, higher occupancy, higher aggregate severity of illness, and examinations taken during the day were associated with longer delays. Overall, the multivariate analysis showed a 24-min decrease in the elapsed time to obtain information during periods with the PACS workstation compared with periods without the workstation (p = .03).\nA PACS workstation significantly decreased the delays in obtaining image information that occurred with high unit occupancy and high aggregate severity of illness and may improve unit efficiency under conditions of high physician workload.", 
+        "authors": [
+            "Redfern RO", 
+            "Kundel HL", 
+            "Polansky M", 
+            "Langlotz CP", 
+            "Horii SC", 
+            "Lanken PN"
+        ], 
+        "journal": "Crit. Care Med.", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/10809274", 
+        "title": "A picture archival and communication system shortens delays in obtaining radiographic information in a medical intensive care unit."
+    }, 
+    {
+        "abstract": "To assess the clinical and economic consequences of the use of preoperative breast magnetic resonance (MR) imaging and core-needle biopsy (CNB) to avert excisional biopsy (EXB).\nA decision-analytic Markov model was constructed to compare MR imaging, CNB, and EXB without preoperative testing in a woman with a suspicious breast lesion. Stage-specific cancer prevalence, tumor recurrence, progression rates, and MR imaging and CNB sensitivity and specificity were obtained from the literature. Cost estimates were obtained from the literature and from the Medicare fee schedule.\nEXB without preoperative testing was associated with the greatest quality-adjusted life expectancy, followed by MR imaging and CNB; life expectancies were 17.409, 17.405, and 17.398 years, respectively. EXB resulted in the greatest lifetime treatment cost ($31,438), followed by MR imaging ($29,072) and CNB ($28,573). Results were robust over a wide range of cancer prevalence, stage distribution, tumor progression rates, and procedure and treatment costs. Incremental cost-effectiveness ratios showed that preoperative testing was cost-effective, but the choice between MR imaging and CNB was highly dependent on the accuracy of each test and to patient preferences.\nPreoperative testing of most suspicious breast lesions was cost-effective. More precise estimates of MR imaging and CNB test performance characteristics are needed. Until those are available, patient preferences should inform individual decisions regarding preoperative testing.", 
+        "authors": [
+            "Hrung JM", 
+            "Langlotz CP", 
+            "Orel SG", 
+            "Fox KR", 
+            "Schnall MD", 
+            "Schwartz JS"
+        ], 
+        "journal": "Radiology", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/10540638", 
+        "title": "Cost-effectiveness of MR imaging and core-needle biopsy in the preoperative work-up of suspicious breast lesions."
+    }, 
+    {
+        "abstract": "The authors performed a systematic, critical review of the literature on magnetic resonance (MR) imaging for primary breast cancer detection in patients with suspicious breast lesions, analyzed MR test performance in the articles meeting study criteria, and used this information to examine the cost-effectiveness of preoperative MR imaging.\nA structured, predefined MEDLINE search was conducted to identify potentially relevant, peer-reviewed, English-language references from January 1996 through August 1997 on the diagnostic accuracy of breast MR imaging. This information was supplemented by manually searching bibliographies of the retrieved articles for additional potentially relevant references. All studies were independently abstracted by two reviewers using a prospectively designed worksheet. Abstraction results were analyzed with the summary receiver operating characteristic (ROC) method.\nOf 41 identified studies, 16 met the inclusion criteria. These studies reported sensitivities ranging from 63% to 100% and specificities ranging from 21% to 100%. Maximum joint sensitivity and specificity of the summary ROC curve was 89% (95% confidence interval [CI]: 82%, 93%). At a sensitivity of 95%, specificity was 67%. When test performance values were applied to a previous cost-effectiveness analysis, the cost-effectiveness of preoperative MR imaging relative to that of excisional biopsy was confirmed, but its cost-effectiveness relative to that of needle core biopsy varied widely.\nFor MR imaging to be a cost-effective alternative to excisional biopsy for diagnosis of suspicious breast lesions, its diagnostic test performance must be equal to or better than the best results in recently published studies.", 
+        "authors": [
+            "Hrung JM", 
+            "Sonnad SS", 
+            "Schwartz JS", 
+            "Langlotz CP"
+        ], 
+        "journal": "Acad Radiol", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/10410164", 
+        "title": "Accuracy of MR imaging in the work-up of suspicious breast lesions: a diagnostic meta-analysis."
+    }, 
+    {
+        "abstract": "The purpose of this study was to compare digital and conventional methods of gastrointestinal imaging based on the cost of image storage and estimated overall costs, radiation exposure to the patient, and duration of the examination.\nOur study sample consisted of 128 patients who underwent conventional gastrointestinal studies (64 double-contrast upper gastrointestinal examinations and 64 double-contrast barium enemas) and 139 patients who underwent digital gastrointestinal studies (66 double-contrast upper gastrointestinal examinations and 73 double-contrast barium enemas). The number of images and films for each study was recorded, and the mean cost of image storage and the estimated overall costs for digital versus conventional studies were calculated. Both the duration of fluoroscopy and the time from start to completion of the study were obtained from our radiology information system. From these data, we calculated mean radiation exposure to the patient and the duration of the examination. Finally, referring physicians completed a questionnaire about their level of satisfaction with paper prints generated from digital gastrointestinal studies.\nWhen digital studies were compared with conventional studies, the mean cost of image storage decreased by 45% and the estimated overall 10-year costs decreased by 8%. The mean number of spot images increased by 8% for upper gastrointestinal examinations and by 25% for barium enema examinations, whereas the mean duration of fluoroscopy decreased by 4% and by 10%, respectively. As a result, radiation exposure to patients increased by only 2%, a difference that did not approach statistical significance. Finally, the mean duration of examinations decreased by 24% for upper gastrointestinal examinations and by 33% for barium enemas. Approximately 85% of the physicians who completed the questionnaires indicated that they reviewed the paper prints generated from digital studies and that they would like to continue receiving them.\nDigital gastrointestinal imaging systems are associated with higher initial costs than conventional systems, but the long-term costs of these digital imaging systems are slightly less because of the lower cost of image storage, and radiation exposure to patients is comparable. The shorter duration of digital examinations is a potential benefit of this technology, allowing improved patient throughput. Finally, referring physicians have a high level of satisfaction with paper prints generated from digital imaging.", 
+        "authors": [
+            "Chawla S", 
+            "Levine MS", 
+            "Laufer I", 
+            "Gingold EL", 
+            "Kelly TJ", 
+            "Langlotz CP"
+        ], 
+        "journal": "AJR Am J Roentgenol", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/10227502", 
+        "title": "Gastrointestinal imaging: a systems analysis comparing digital and conventional techniques."
+    }, 
+    {
+        "abstract": "To evaluate a bolus-tracking technique in helical computed tomography (CT) for identifying the onset of the nephrographic phase and to determine the effect of varying the volume and injection rate of contrast material on nephrographic phase onset.\nSeventy-five patients underwent bolus tracking of contrast material followed by helical renal CT. In 50 patients, 150 mL of 60% iodinated contrast material (iohexol or iothalamate meglumine) was injected at either 2 mL/sec (25 patients [group 1]) or 3 mL/sec (25 patients [group 2]). In 25 patients who had previously undergone nephrectomy, 100 mL of 60% iodinated contrast material was injected at 3 mL/sec (group 3). Nephrographic phase onset was determined by visually assessing the transition to a homogeneous nephrogram during a monitoring scan series starting 40 seconds after injection.\nNephrographic phase onset ranged from 60 to 136 seconds (mean, 89 seconds +/- 17 [+/- SD]). Statistically significant differences in mean onset times were observed among groups 1 (103 seconds +/- 12), 2 (91 seconds +/- 16), and 3 (75 seconds +/- 9) (P < .001). Multiple regression analysis showed patient age, contrast material volume, and injection rate to be independent predictors of nephrographic phase onset. Contrast material volume, patient age, and patient weight were independent predictors of the degree of renal enhancement.\nNephrographic phase onset is highly dependent on methods of contrast material administration and patient characteristics.", 
+        "authors": [
+            "Birnbaum BA", 
+            "Jacobs JE", 
+            "Langlotz CP", 
+            "Ramchandani P"
+        ], 
+        "journal": "Radiology", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/10189457", 
+        "title": "Assessment of a bolus-tracking technique in helical renal CT to optimize nephrographic phase imaging."
+    }, 
+    {
+        "abstract": "An interpretation model for evaluating magnetic resonance (MR) images of the breast was constructed that allowed differentiation of benign from malignant palpable or mammographically visible abnormalities. Architectural features define each node of the model. Investigation was subsequently made of the histologic findings in individuals within each node and of the frequency with which each histologic finding manifested as a particular architectural feature to determine whether nodal location and specific histologic findings are mutually predictive. The strongest associations were found between fibrocystic change and smooth masses, fibroadenoma and lobulated masses with nonenhancing internal septations, invasive ductal carcinoma (with or without ductal carcinoma in situ [DCIS]) and enhancing irregular or spiculated masses, invasive tubular carcinoma or radial scar and spiculated masses, medullary or colloid carcinoma and enhancing lobulated masses, invasive lobular carcinoma and the absence of a focal mass, DCIS and ductal enhancement, and DCIS (with or without invasive ductal carcinoma) and regional enhancement. Nodal location and histologic findings proved to be mutually predictive within the model; that is, the nodal location of MR imaging features within the model can be used to predict histologic findings and vice versa.", 
+        "authors": [
+            "Nunes LW", 
+            "Schnall MD", 
+            "Orel SG", 
+            "Hochman MG", 
+            "Langlotz CP", 
+            "Reynolds CA", 
+            "Torosian MH"
+        ], 
+        "journal": "Radiographics", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/9925393", 
+        "title": "Correlation of lesion appearance and histologic findings for the nodes of a breast MR imaging interpretation model."
+    }, 
+    {
+        "abstract": "", 
+        "authors": [
+            "Langlotz CP"
+        ], 
+        "journal": "Acad Radiol", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/9891164", 
+        "title": "Overcoming barriers to outcomes research on imaging: lessons from an abstract decision model."
+    }, 
+    {
+        "abstract": "In summary, the radiology outcomes research literature is both extensive and broad. The methodologic quality, however, is quite variable. Overall, this quality could be improved by intervention in two areas: methodologic dissemination and development. The number of researchers investigating radiology-related outcomes is high, and presently there are over 20 journals devoted exclusively to radiology research. Even with a relatively narrow definition of \"outcomes,\" we identified over 200 radiology outcomes studies, most from the past few years. However, the methodologic quality of most of these articles was relatively low, with important design flaws and biases. Nonetheless, a substantial number of radiology publications do employ state-of-the-art research methods and innovative approaches to methodologic challenges. The quality of radiology outcomes research overall would benefit tremendously from dissemination of such research methods. Instruction in outcomes research methods is accessible to radiologists. For example, there have been several recent articles and series of articles on outcomes research methods in JAMA, including guidelines for the performance and reporting of cost-effectiveness analyses (38-40) and for developing clinical prediction rules (57). Within radiology, several recent articles have appeared on, among other things, cost-effectiveness analysis (34,59,60), assessing quality of life (43), screening for disease (53), and defining the study population (61). The research compendium compiled for the GERRAF (General Electric-Association of University Radiologists Radiology Research Academic Fellowships) program remains a comprehensive methodologic source for many of the issues in radiology outcomes research, and outcomes research methods courses are offered every year at the Society for Health Services Research in Radiology and Society for Medical Decision Making meetings, as well as at the meeting of the Radiological Society of North America. Even so, awareness of the need for such research techniques remains limited. Dissemination of sound research methods is limited at least in part by the current incentives in radiology research. At many institutions, the number of research publications produced, rather than their quality, determines promotion or academic success. Unfortunately, more rigorous study designs often require more time and resources. Further, because peer reviewers are often as uninformed about research methods as the bulk of those who are submitting manuscripts, it may actually be more difficult to publish articles with more advanced methodologic designs. The standard in radiology is the uncontrolled case series, and deviation from the standard may make acceptance for publication more difficult. On a more optimistic note, recent publication of a number of methodology articles suggests that at least some journals are promoting improved research in methodology (43,53,59-61). We hope that time will be available for manuscript reviewers to learn to understand the strengths and weaknesses of various research approaches. If more rigorous study designs were required for publication, radiology outcomes research would probably improve drastically. Nevertheless, the current peer-review system does not effectively promote sound research design. The other great incentive in research is funding. Clearly, if advanced research design is required for funding, then there is incentive for improvement in research quality. Traditionally, National Cancer Institute and other National Institutes of Health and public sector funding has been predicated on a high level of research sophistication. Undoubtedly, availability of grants for diagnostic and screening imaging clinical trials and other research will go far to improve radiology research methods. The other traditional source of research funding is industry.", 
+        "authors": [
+            "Blackmore CC", 
+            "Black WC", 
+            "Jarvik JG", 
+            "Langlotz CP"
+        ], 
+        "journal": "Acad Radiol", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/9891161", 
+        "title": "A critical synopsis of the diagnostic and screening radiology outcomes literature."
+    }, 
+    {
+        "abstract": "To determine the ability of endorectal magnetic resonance (MR) imaging to help predict postprostatectomy disease recurrence and, thereby, patient outcome.\nThe authors evaluated 116 patients referred for prostate MR imaging during 1991 and 1992 who subsequently underwent radical prostatectomy and for whom follow-up data through 1996 could be obtained. The MR reports, clinic charts, and pathology reports were reviewed. Disease recurrence was established by means of detectable levels of serum prostate-specific antigen (PSA) after surgery.\nThirty-four patients (29%) had postoperative disease recurrence. Patients with recurrence had higher preoperative PSA values (P < .0001). These patients also more frequently had positive surgical margins (P = .0005), transcapsular tumor spread (P < .0001), seminal vesicle involvement (P = .0012), and tumors of advanced stage (P < .0001) and high grade (P = .0058). Of 13 patients whose MR examinations showed definite extracapsular disease, eight (62%) had disease recurrence. The recurrence rate when MR imaging indicated limited disease (24%) was similar to that when MR imaging showed possible microscopic extension (27%). An MR finding of definite extracapsular disease was 24% sensitive and 94% specific for the prediction of disease recurrence.\nMR imaging findings of definite extracapsular spread of disease helped predict prostate tumor recurrence with high specificity, although with low sensitivity.", 
+        "authors": [
+            "Manzone TA", 
+            "Malkowicz SB", 
+            "Tomaszewski JE", 
+            "Schnall MD", 
+            "Langlotz CP"
+        ], 
+        "journal": "Radiology", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/9807586", 
+        "title": "Use of endorectal MR imaging to predict prostate carcinoma recurrence after radical prostatectomy."
+    }, 
+    {
+        "abstract": "To evaluate the belief that the frequencies of contrast material extravasation and minor, nonidiosyncratic contrast material reactions correlate with intravenous injection rates.\nComplications of 6,660 consecutive injections of contrast material for computed tomography were prospectively recorded. Ionic (n = 4,851) or nonionic (n = 1,809) contrast material was injected at 0.5-4.0 mL/sec. The injection rate was 1.9 mL/sec or less in group 1 (n = 2,899), 2.0-2.9 mL/sec in group 2 (n = 2,475), and 3.0-4.0 mL/sec in group 3 (n = 1,286).\nThe extravasation rate (0.6%) did not differ significantly between the groups. The reaction rate (8.4%) also did not differ significantly between the groups. The rate of minor reactions (8.0%) was higher with ionic (9.9%) than nonionic (2.9%) contrast material (relative risk = 3.4). The rate of major reactions (0.4%) did not vary significantly with type of contrast material. The rate of nausea or vomiting (3.8%) did not differ significantly between the groups but was higher with ionic (4.9%) than nonionic (1.1%) contrast material (relative risk = 4.5). The rate of severe warmth (2.1%) was significantly higher in group 3 (2.8%) than group 1 (2.0%) or 2 (1.8%).\nNo correlations exist between injection rate and extravasation rate or overall reaction rate.", 
+        "authors": [
+            "Jacobs JE", 
+            "Birnbaum BA", 
+            "Langlotz CP"
+        ], 
+        "journal": "Radiology", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/9807567", 
+        "title": "Contrast media reactions and extravasation: relationship to intravenous injection rates."
+    }, 
+    {
+        "abstract": "", 
+        "authors": [
+            "Swan JS", 
+            "Langlotz CP"
+        ], 
+        "journal": "Invest Radiol", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/9766040", 
+        "title": "Patient preference for magnetic resonance versus conventional angiography. Assessment methods and implications for cost-effectiveness analysis: an overview."
+    }, 
+    {
+        "abstract": "Although MR spectroscopy and functional MR imaging of the brain have been successful at 4 T, conventional fast spin-echo imaging of the brain at 4 T has not been adequately evaluated. The purpose of this study was to compare the detection of white matter abnormalities in multiple sclerosis (MS) at 1.5 T and 4 T.\nFifteen patients with clinically definite MS were imaged at both 1.5 T and 4 T within a 1-week period. Comparison was made between fast spin-echo long-TR images at both field strengths. Pulse sequences were tailored to maximize resolution and signal-to-noise ratio in clinically relevant imaging times (< 7 min). Four interpreters independently reviewed the images obtained at both field strengths in separate sessions and evaluated them for lesion identification, size, characterization, and subjective resolution. Differences in interpretations at 1.5 T and 4 T were subsequently recorded.\nImages obtained at 4 T showed a mean of 88 more lesions as compared with images obtained at 1.5 T. All the lesions measured less than 5 mm and were typically aligned along perivascular spaces. Twenty-five consensually identified lesions on 4-T images were not seen at all on 1.5-T images. Moreover, 4-T images showed 56 additional consensually identified lesions, which were indistinct and seen only in retrospect on 1.5-T images. These lesions were frequently (n = 48) identified in large confluent areas of white matter signal intensity abnormality at 1.5 T. All observers also agreed that 4-T images subjectively enhanced the perception of normal perivascular spaces and small perivascular lesions.\nMR imaging at 4 T can depict white matter abnormalities in MS patients not detectable at 1.5 T through higher resolution with comparable signal-to-noise ratio and imaging times.", 
+        "authors": [
+            "Keiper MD", 
+            "Grossman RI", 
+            "Hirsch JA", 
+            "Bolinger L", 
+            "Ott IL", 
+            "Mannon LJ", 
+            "Langlotz CP", 
+            "Kolson DL"
+        ], 
+        "journal": "AJNR Am J Neuroradiol", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/9763383", 
+        "title": "MR identification of white matter abnormalities in multiple sclerosis: a comparison between 1.5 T and 4 T."
+    }, 
+    {
+        "abstract": "", 
+        "authors": [
+            "Langlotz CP", 
+            "Sonnad SS"
+        ], 
+        "journal": "Acad Radiol", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/9750829", 
+        "title": "Meta-analysis of diagnostic procedures: a brief overview."
+    }, 
+    {
+        "abstract": "The purpose of the study was to develop quantitative and qualitative criteria for diagnosing fatty liver on contrast-enhanced helical CT.\nDifferential liver-spleen attenuation was evaluated between 80 and 120 sec after injection in 76 patients who underwent contrast-enhanced helical CT. Unenhanced CT images had earlier established fatty liver when the liver minus spleen attenuation difference was less than or equal to -10 H (n = 18). Four observers who had not seen the unenhanced images used contrast-enhanced CT images to assess the presence of fatty liver on a five-point Likert scale, the presence of geographic areas spared from fatty infiltration, and the relative liver-spleen attenuation. The diagnostic accuracies of various imaging criteria were compared using McNemar's chi-square test (for sensitivity and specificity) and analysis of receiver operating characteristic curves.\nSensitivity, specificity, and receiver operating characteristic curve areas for observers' qualitative judgments were 54%, 95%, and .91, respectively; for quantitative differential liver-spleen attenuation (80-100 sec; -20.5 H discriminatory value), the values were 86%, 87%, and .94, respectively; and for quantitative differential liver-spleen attenuation (101-120 sec; -18.5 H discriminatory value), the values were 93%, 93%, and .98, respectively. Differential liver-spleen attenuation was time-dependent; overlap was noted between healthy subjects and patients with fatty liver. Qualitatively, geographic sparing was highly specific (94%) for fatty liver, whereas liver attenuation greater than or equal to spleen attenuation excluded fatty liver in all but one case.\nAlthough quantitative and qualitative criteria for diagnosing fatty liver on helical CT can be determined, they are protocol-specific. Limited unenhanced hepatic CT remains the optimal technique for detection of fatty infiltration of the liver.", 
+        "authors": [
+            "Jacobs JE", 
+            "Birnbaum BA", 
+            "Shapiro MA", 
+            "Langlotz CP", 
+            "Slosman F", 
+            "Rubesin SE", 
+            "Horii SC"
+        ], 
+        "journal": "AJR Am J Roentgenol", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/9725292", 
+        "title": "Diagnostic criteria for fatty infiltration of the liver on contrast-enhanced helical CT."
+    }, 
+    {
+        "abstract": "In patients with chronic pulmonary embolism, pulmonary thromboendarterectomy may result in a unique form of noncardiogenic pulmonary edema termed reperfusion edema. This report reviews the authors' experience after pulmonary thromboendarterectomy with particular emphasis on the radiographic manifestations of reperfusion edema. The clinical and radiographic record of 25 patients who underwent pulmonary thromboendarterectomy at the University of Pennsylvania from 1985 through 1995 were reviewed. The zonal distribution of radiographic opacity, time to maximal opacity, and the time to clearance of reperfusion edema were determined. The relationship of these radiographic manifestations to clinical severity of disease and clinical outcome was examined. Reperfusion edema, characterized by patchy bilateral perihilar alveolar opacities, occurred in all but one patient. There is a lower lung zone predominance of opacities, but in individual cases, striking unilateral or haphazard arrangements of opacities may be seen. In this small sample of patients, no association between preoperative pulmonary arterial pressures and radiographic appearance or clinical outcome was found. However, severity of radiographic opacities, as measured by the extent of involved lung, correlated with disease severity, as measured by time to extubation and time to discharge. Pneumonia, defined as a radiographic opacity that evolves discordantly with the reperfusion edema opacities, occurred in 20% of cases. Reperfusion edema is a common consequence of pulmonary thromboendarterectomy. The severity of radiographic manifestations and clinical severity of disease are related. This characteristically appears as perihilar alveolar opacities.", 
+        "authors": [
+            "Miller WT", 
+            "Osiason AW", 
+            "Langlotz CP", 
+            "Palevsky HI"
+        ], 
+        "journal": "J Thorac Imaging", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/9671419", 
+        "title": "Reperfusion edema after thromboendarterectomy: radiographic patterns of disease."
+    }, 
+    {
+        "abstract": "The purpose of this study was to compare the diagnostic information provided by a combination of two-dimensional and three-dimensional (3D) time-of-flight (TOF) techniques with that provided by non-breath-hold 3D spoiled gradient-echo gadolinium-enhanced MR angiography.\nFifty patients suspected of having extracranial atherosclerotic carotid artery disease were examined with all three imaging techniques using a 1.5-T MR imaging system. Three observers independently and retrospectively measured the degree of stenosis according to the North American Symptomatic Carotid Endarterectomy trial criteria. The observers were unaware of the results of other MR imaging pulse sequences and digital subtraction angiography. The standard of reference was established by digital subtraction angiography. Results were evaluated with receiver operating characteristic curve analysis. The degree of interobserver agreement was determined using pairwise kappa statistics.\nThe grading of carotid artery stenosis as measured by the area under the receiver operating characteristic curve was less accurate with non-breath-hold 3D gadolinium-enhanced MR angiography than with TOF imaging. Interobserver variability was greater for non-breath-hold 3D gadolinium-enhanced MR angiography than for TOF techniques.\nRoutine evaluation of carotid artery stenosis at the level of the bifurcation using non-breath-hold 3D gadolinium-enhanced MR angiography is less accurate than is TOF imaging and is therefore not recommended. The weakness of this technique may be due to problems in timing the injection of gadolinium and the masking of the carotid bifurcation by the venous jugular system.", 
+        "authors": [
+            "Slosman F", 
+            "Stolpen AH", 
+            "Lexa FJ", 
+            "Schnall MD", 
+            "Langlotz CP", 
+            "Carpenter JP", 
+            "Goldberg HI"
+        ], 
+        "journal": "AJR Am J Roentgenol", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/9456971", 
+        "title": "Extracranial atherosclerotic carotid artery disease: evaluation of non-breath-hold three-dimensional gadolinium-enhanced MR angiography."
+    }, 
+    {
+        "abstract": "To determine the incremental cash flows associated with department-wide implementation of a picture archiving and communication system (PACS) and computed radiography (CR) at a large academic medical center.\nThe authors determined all capital and operational costs associated with PACS implementation during an 8-year time horizon. Economic effects were identified, adjusted for time value, and used to calculate net present values (NPVs) for each section of the department of radiology and for the department as a whole.\nThe chest-bone section used the most resources. Changes in cost assumptions for the chest-bone section had a dominant effect on the department-wide NPV. The base-case NPV (i.e., that determined by using the initial assumptions) was negative, indicating that additional net costs are incurred by the radiology department from PACS implementation. PACS and CR provide cost savings only when a 12-year hardware life span is assumed, when CR equipment is removed from the analysis, or when digitized long-term archives are compressed at a rate of 10:1.\nFull PACS-CR implementation would not provide cost savings for a large, subspecialized department. However, institutions that are committed to CR implementation (for whom CR implementation would represent a sunk cost) or institutions that are able to archive images by using image compression will experience cost savings from PACS.", 
+        "authors": [
+            "Pratt HM", 
+            "Langlotz CP", 
+            "Feingold ER", 
+            "Schwartz JS", 
+            "Kundel HL"
+        ], 
+        "journal": "Radiology", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/9423679", 
+        "title": "Incremental cost of department-wide implementation of a picture archiving and communication system and computed radiography."
+    }, 
+    {
+        "abstract": "To estimate the prevalence and the clinical and economic consequences of management strategies for thyroid lesions detected incidentally on cross-sectional imaging of the head and neck.\nTwo hundred consecutive CT scans and 200 consecutive MR images of the neck performed over a 1-year period in patients being examined for other purposes were reviewed retrospectively to determine the prevalence of unexpected thyroid lesions. After excluding patients with prior thyroidectomies, known thyroid disease, and inadequate examinations, 231 imaging studies were analyzed.\nIncidental thyroid lesions were originally reported in 14 (6%) of the 231 patients, but an additional 22 (9.5%) were found on retrospective review for a total of nearly 16% (36 of 231). Six of the 36 patients received further workup, consisting of nuclear medicine scintigraphy (n = 3), sonography (n = 3), thyroid function tests (n = 5), fine-needle aspiration (n = 4), and thyroid lobectomy (n = 1). Final diagnoses, obtained in four of the six patients, included three multinodular goiters and one follicular adenoma. Two patients, one with nondiagnostic findings at fine-needle aspiration and a second with normal thyroid function test results, are being followed up. The mean cost of the workup and treatment per examined patient was $1158.\nIncidental thyroid lesions are frequently present and often overlooked on cross-sectional images of the neck in patients being examined for other reasons. The cost of pursuing a workup of these lesions and their high prevalence in the population raise questions regarding appropriate management strategies.", 
+        "authors": [
+            "Youserm DM", 
+            "Huang T", 
+            "Loevner LA", 
+            "Langlotz CP"
+        ], 
+        "journal": "AJNR Am J Neuroradiol", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/9296181", 
+        "title": "Clinical and economic impact of incidental thyroid lesions found with CT and MR."
+    }, 
+    {
+        "abstract": "Our objective was twofold: to determine which architectural features revealed by high spatial-resolution MR imaging of the breast contribute to diagnostic accuracy and to evaluate the diagnostic performance characteristics of those architectural features.\nEligible patients with suspicious mammographic or palpable findings or both underwent MR imaging. Ninety-three patients whose MR images revealed lesions that corresponded to the mammographically visible or palpable findings were included in the study. Patients were examined with sagittal T1-weighted spin-echo MR imaging, fat-saturated T2-weighted fast spin-echo MR imaging, and dynamically enhanced fat-saturated fast gradient-echo MR imaging. All patients underwent subsequent excisional biopsy or cyst aspiration. Lesions were identified initially by an experienced radiologist who was aware of the patient's clinical or mammographic information. Two radiologists who were unaware of the patients' histories and who had less experience in MR imaging of the breast then independently evaluated each lesion for the architectural-features and predicted each lesion's potential for malignancy.\nArchitectural features that were highly predictive of benign disease included smooth or lobulated borders (97-100%), the absence of mass enhancement (100%), and enhancement that was less than the enhancement of surrounding breast fibroglandular tissue (93-100%). Nonenhancing internal septations were specific for the diagnosis of fibroadenoma. Architectural features that were highly predictive of malignant disease included spiculated borders (76-88%) and peripheral rim enhancement in the presence of central lesion enhancement (79-92%).\nArchitectural features revealed by high spatial-resolution MR imaging of the breast can help distinguish benign from malignant disease.", 
+        "authors": [
+            "Nunes LW", 
+            "Schnall MD", 
+            "Siegelman ES", 
+            "Langlotz CP", 
+            "Orel SG", 
+            "Sullivan D", 
+            "Muenz LA", 
+            "Reynolds CA", 
+            "Torosian MH"
+        ], 
+        "journal": "AJR Am J Roentgenol", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/9242744", 
+        "title": "Diagnostic performance characteristics of architectural features revealed by high spatial-resolution MR imaging of the breast."
+    }, 
+    {
+        "abstract": "", 
+        "authors": [
+            "Tempany CM", 
+            "Langlotz CP"
+        ], 
+        "journal": "J. Urol.", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/9120955", 
+        "title": "Re: Endo-rectal coil magnetic resonance imaging in clinically localized prostate cancer: is it accurate?"
+    }, 
+    {
+        "abstract": "To develop an interpretation model based on architectural features of suspicious breast findings on magnetic resonance (MR) images.\nOne hundred ninety-two patients with mammographically visible or palpable findings underwent T1- and fat-saturated T2-weighted spin-echo and contrast agent-enhanced fat-saturated gradient-echo MR imaging. Patients underwent subsequent excisional biopsy for histopathologic confirmation. An interpretation model was constructed by using 98 cases and was tested prospectively and expanded by using 94 different cases. Sensitivity, specificity, predictive values, and receiver operating characteristic curves were computed for all models.\nIndividual features with high predictive values were MR visibility, enhancement degree and pattern, focal mass border characteristics, and focal mass internal septations. Feature combinations with high negative predictive values for malignancy were absence of an MR-visible abnormality, focal masses with smooth borders, lobulated or irregular masses with nonenhancing internal septations, and focal masses with no (or minimal) enhancement. The validated- and revised-model performance characteristics were, respectively, as follows: sensitivity, 100% and 96%; specificity, 69% and 79%; positive predictive value, 75% and 76%; negative predictive value, 100% and 97%; and overall accuracy, 83% and 86%.\nAn interpretation model that incorporates breast MR architectural features can achieve high sensitivity and improve specificity for diagnosing breast cancer.", 
+        "authors": [
+            "Nunes LW", 
+            "Schnall MD", 
+            "Orel SG", 
+            "Hochman MG", 
+            "Langlotz CP", 
+            "Reynolds CA", 
+            "Torosian MH"
+        ], 
+        "journal": "Radiology", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/9051042", 
+        "title": "Breast MR imaging: interpretation model."
+    }, 
+    {
+        "abstract": "To assess the appropriateness of utilization patterns for the barium enema and colonoscopy in a Medicaid population.\nFrom 1987 to 1991, a Medicaid managed-care database in Philadelphia revealed claims for a total of 2357 outpatient barium enemas and 896 outpatient colonoscopic examinations. The database was reviewed to determine the primary diagnostic (ICD-9-CM) codes assigned to patients who underwent these procedures. These codes were used as a proxy for indications. Each of the diagnostic codes for barium enema and colonoscopy was then classified either as appropriate, inappropriate, equivocal, or miscoded based on current guidelines in the medical literature.\nA total of 1962 claims (83%) for barium enema were classified as appropriate, 126 (5%) as inappropriate, 84 (4%) as equivocal, and 185 (8%) as miscoded, whereas 645 claims (72%) for colonoscopy were classified as appropriate, 176 (20%) as inappropriate, 65 (7%) as equivocal, and 10 (1%) as miscoded. Thus, significantly more colonoscopic examinations were rated as inappropriate (p < 0.001).\nOur study suggests that more stringent criteria need to be used by physicians in ordering diagnostic examinations of the colon, particularly colonoscopy. Further investigation of the appropriateness of these procedures and the development and dissemination of guidelines seems warranted.", 
+        "authors": [
+            "Levine MS", 
+            "Sor S", 
+            "Yin D", 
+            "Langlotz CP", 
+            "Bachwich D"
+        ], 
+        "journal": "Abdom Imaging", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/9000352", 
+        "title": "Barium enema and colonoscopy: appropriateness of utilization in a Medicaid population."
+    }, 
+    {
+        "abstract": "This article answers several important questions about the ultimate clinical usefulness of prostate MR imaging. How accurate is prostate MR imaging? What are the optimal methods for performance and interpretation of the study, considering the tradeoffs between false-positive and false-negative results? Is endorectal-coil imaging a cost-effective part of the prostate examination? And, which men are likely to benefit the most from an endorectal prostate examination?", 
+        "authors": [
+            "Langlotz CP"
+        ], 
+        "journal": "Magn Reson Imaging Clin N Am", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/8873018", 
+        "title": "Benefits and costs of MR imaging of prostate cancer."
+    }, 
+    {
+        "abstract": "To evaluate the effect of MR imaging of the brain on four domains of patient care: diagnosis, diagnostic workup, therapy, and prognosis.\nPre- and post-MR written questionnaires and oral interviews were administered to the referring clinicians of 103 medical and neurologic inpatients at a tertiary care institution. Additional information was obtained from radiologic reports and records.\nThe study population had a diverse array of signs and symptoms and of presumptive clinical diagnoses, reflecting the breadth of disease seen at our institution. The vast majority of physicians (89%) reported that MR imaging added significant diagnostic information, playing an important role in guiding diagnostic workup (24%), planning treatment (34%), and estimating prognosis (47%). MR imaging was significantly more likely to decrease than to increase confidence in the presumptive clinical diagnosis. Thus, MR imaging may be most useful in the setting of diagnostic uncertainty.\nOur results show that MR imaging of the brain has important effects on each of the four domains of care for medical inpatients.", 
+        "authors": [
+            "Hirsch JA", 
+            "Langlotz CP", 
+            "Lee J", 
+            "Tanio CP", 
+            "Grossman RI", 
+            "Schulman KA"
+        ], 
+        "journal": "AJNR Am J Neuroradiol", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/8871707", 
+        "title": "Clinical assessment of MR of the brain in nonsurgical inpatients."
+    }, 
+    {
+        "abstract": "This article discusses the strengths and weaknesses of technology assessment methods for the evaluation of novel and complex radiology systems, including picture archiving and communication systems (PACS), computed radiography (CR), teleradiology, and other new models for the delivery of radiology services. Using examples from PACS and CR, we review early economic assessments of PACS from the radiology department. We then broaden our perspective to discuss the analytic criteria that can be used to evaluate economic analyses of PACS as the health care delivery system shifts toward managed care. We close with a proposal for optimizing the integration of information technology into the clinical environment through ongoing target data collection during the implementation of new radiology systems.", 
+        "authors": [
+            "Langlotz CP", 
+            "Seshadri S"
+        ], 
+        "journal": "Radiol. Clin. North Am.", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/8657877", 
+        "title": "Technology assessment methods for radiology systems."
+    }, 
+    {
+        "abstract": "", 
+        "authors": [
+            "Langlotz CP", 
+            "Schnall MD", 
+            "Malkowicz SB", 
+            "Schwartz JS"
+        ], 
+        "journal": "Acad Radiol", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/8796502", 
+        "title": "Cost-effectiveness of endorectal magnetic resonance imaging for the staging of prostate cancer."
+    }, 
+    {
+        "abstract": "To prospectively compare efficiency and outcome of a standard film-only system with those of a digital picture archiving and communication system (PACS).\nThe film-only system, which used either analog film or computed radiography (CR) hard copy, was compared with a PACS, which used CR images displayed on a multiviewer in the radiology department and a workstation in the medical intensive care unit. A random sample of nonroutine, bedside chest radiographs was studied.\nWithin 20 minutes of completion of radiography, 246 of 328 (75%) of the images were available at the workstations; it took 1.8 hours for 238 of 317 (75%) of the images to be displayed on the multiviewer. When the workstation was used, the staff did not access the image information earlier, but clinical actions were initiated more promptly in response to imaging findings. Consultation with radiologists decreased from 507 of 561 (90%) images with hard copies to 70 of 249 (28%) with the workstation.\nUse of a PACS improves the delivery of chest images, facilitates the initiation of clinical actions, and decreases input by radiologists.", 
+        "authors": [
+            "Kundel HL", 
+            "Seshadri SB", 
+            "Langlotz CP", 
+            "Lanken PN", 
+            "Horii SC", 
+            "Nodine CF", 
+            "Polansky M", 
+            "Feingold E", 
+            "Brikman I", 
+            "Bozzo M", 
+            "Redfern R"
+        ], 
+        "journal": "Radiology", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/8633138", 
+        "title": "Prospective study of a PACS: information flow and clinical action in a medical intensive care unit."
+    }, 
+    {
+        "abstract": "With limited resources available, we all would like to allocate health care dollars to do the most good. Clinical research tells us what outcomes to expect (in many cases) from the introduction of a health care program, a test, or a therapy. Even primitive cost analysis can assess the cost of such programs. The ability to place a value on health states is vital when assessing how patient outcomes influence the relative cost-effectiveness of medical procedures, therapies, and programs. Without a means to measure the value of a particular health state, one is left to compare apples with oranges and oranges with vacuum cleaners. In fact, comparisons of fruit and home appliances is relatively easy, because one can readily apply monetary values to apples, oranges, and vacuum cleaners and compare dollar amounts. How can one do the same for the outcomes of medical procedures and diagnostic tests? This is the challenge for health services and outcomes researchers throughout the world and, more urgently, the focus of policy makers, governments, and health insurers. The purpose of this paper is to describe quality-adjusted life-years (QALYs), a method that has successfully measured the outcomes of disparate health programs. We will introduce the QALY method, summarize the various methods of measuring and classifying health states, describe three methods that have been used to measure patients' preferences (utilities) for health states, and discuss the limitations of utility assessment and some controversies that result from the measurement and use of utilities and concerning health-related quality of life. Readers who are interested in general topics of radiology technology assessment and cost-effectiveness analysis should consult other review articles [1-4].", 
+        "authors": [
+            "Yin D", 
+            "Forman HP", 
+            "Langlotz CP"
+        ], 
+        "journal": "AJR Am J Roentgenol", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/7484556", 
+        "title": "Evaluating health services: the importance of patients' preferences and quality of life."
+    }, 
+    {
+        "abstract": "To determine the relationship between the morphology of colon carcinomas detected with barium enema examination and the cancer stage.\nClinical, radiographic, endoscopic, surgical, and histopathologic findings were retrospectively reviewed in 152 patients with colon cancer detected with barium enema examination during a 2-year period.\nEighty-six patients (57%) had lesions in the rectum and sigmoid and descending colon, and 66 (43%) patients had lesions more proximally in the colon. Lesions on the right side of the colon were less likely to cause symptoms than those on the left side. Eighty-one patients (53%) had annular or semiannular lesions, 57 (38%) had polypoid lesions, and 14 (9%) had plaquelike or carpet lesions. Six patients (4%) had Dukes stage A lesions; 84 (55%), Dukes stage B lesions; 42 (28%), Dukes stage C lesions; and 20 (13%), Dukes stage D lesions.\nAnnular or semiannular carcinomas had higher rates of serosal invasion and lymph node metastasis than polypoid carcinomas, but the rates of liver metastases were comparable.", 
+        "authors": [
+            "McCarthy PA", 
+            "Rubesin SE", 
+            "Levine MS", 
+            "Langlotz CP", 
+            "Laufer I", 
+            "Furth EE", 
+            "Herlinger H"
+        ], 
+        "journal": "Radiology", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/7480739", 
+        "title": "Colon cancer: morphology detected with barium enema examination versus histopathologic stage."
+    }, 
+    {
+        "abstract": "Most economic studies of picture archiving and communication systems (PACS) to date, including our own, have focused on the perspectives of the radiology department and its direct costs. However, many researchers have suggested additional cost savings that may accrue to the medical center as a whole through increased operational capacity, fewer lost images, rapid simultaneous access to images, and other decreases in resource utilization. We describe here an economic analysis framework we have developed to estimate these potential additional savings. Our framework is comprised of two parallel measurement methods. The first method estimates the cost of care actually delivered through online capture of charge entries from the hospital's billing computer and from the clinical practices' billing database. Multiple regression analyses will be used to model cost of care, length of stay, and other estimates of resource utilization. The second method is the observational measurement of actual resource utilization, such as technologist time, frequency and duration of film searches, and equipment utilization rates. The costs associated with changes in resource use will be estimated using wage rates and other standard economic methods. Our working hypothesis is that after controlling for the underlying clinical and demographic differences among patients, patients imaged using a PACS will have shorter lengths of stay, shorter exam performance times, and decreased costs of care. We expect the results of our analysis to explain and resolve some of the conflicting views of the cost-effectiveness of PACS.", 
+        "authors": [
+            "Langlotz CP", 
+            "Even-Shoshan O", 
+            "Seshadri SS", 
+            "Brikman I", 
+            "Kishore S", 
+            "Kundel HL", 
+            "Schwartz JS"
+        ], 
+        "journal": "J Digit Imaging", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/7612707", 
+        "title": "A methodology for the economic assessment of picture archiving and communication systems."
+    }, 
+    {
+        "abstract": "To evaluate the cost-effectiveness of magnetic resonance (MR) angiography in the preoperative planning of treatment in patients with limb-threatening peripheral vascular disease (PVD).\nA decision model was developed to study the effects of MR angiography on the outcome and cost of treatment. The authors calculated the incremental cost per quality-adjusted life-years gained (ie, cost-effectiveness ratio) when conventional angiography was replaced or supplemented with MR angiography. Previously reported data regarding the accuracies of MR and conventional angiography were used in the analysis.\nThe cost-effectiveness ratio of MR angiography ranged from negative (cost-reducing) values to $78,000. For the base case in which the sensitivity and specificity of MR angiography for the evaluation of inflow vessels were 92% and 88% and those of conventional angiography were 97% and 97%, respectively, the cost-effectiveness ratio was $25,895.\nMR angiography may be a cost-effective alternative to conventional angiography in patients with limb-threatening PVD if its accuracy for the inflow evaluation reaches certain thresholds. Further prospective investigation is warranted.", 
+        "authors": [
+            "Yin D", 
+            "Baum RA", 
+            "Carpenter JP", 
+            "Langlotz CP", 
+            "Pentecost MJ"
+        ], 
+        "journal": "Radiology", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/7862975", 
+        "title": "Cost-effectiveness of MR angiography in cases of limb-threatening peripheral vascular disease."
+    }, 
+    {
+        "abstract": "Pulmonary infection and tumor in the AIDS population has a variable clinical and radiographic presentation. The association between the radiographic presentation of pulmonary tuberculosis and CD4 T lymphocyte count in the HIV-infected patient is investigated in order to provide an empirical approach for early diagnosis, treatment, and isolation of infected subjects.\nA retrospective analysis of chest radiographs, CD4 T lymphocyte counts, and clinical history of 35 subjects from 3 urban hospitals was performed. All subjects were HIV-seropositive and had culture-proven pulmonary tuberculosis. Radiographs were evaluated for the presence of either a pattern characteristic of post-primary tuberculosis (typical pattern) or a pattern uncharacteristic of post-primary infection (atypical pattern).\nTwenty-one of 26 subjects with a CD4 T lymphocyte count less than 0.20 x 10(9) cells/L, whereas only 1 of 9 subjects with a CD4 T lymphocyte count of 0.20 x 10(9) cells/L or more presented with an atypical pattern of pulmonary tuberculosis (p < 0.001). The mean CD4 T lymphocyte counts of those subjects presenting with atypical versus typical radiographic pattern of post-primary pulmonary tuberculosis were 0.069 x 10(9) cells/L (n = 22) and 0.323 x 10(9) cells/L (n = 13), respectively (p < 0.01). Twenty-one of the 22 subjects with an atypical radiographic pattern of pulmonary tuberculosis were significantly immunosuppressed (CD4 < 0.20 x 10(9) cells/L). Atypical radiographic pattern included diffuse and lower lobar opacities, pleural effusion, mediastinal adenopathy, interstitial nodules, and a normal chest radiograph.\nAIDS patients presenting with CD4 count less than 0.20 x 10(9) cells/L and an atypical radiographic pattern for pulmonary tuberculosis are at risk for tuberculous infection requiring appropriate treatment and isolation until the diagnosis of pulmonary tuberculosis has been excluded.", 
+        "authors": [
+            "Keiper MD", 
+            "Beumont M", 
+            "Elshami A", 
+            "Langlotz CP", 
+            "Miller WT"
+        ], 
+        "journal": "Chest", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/7813316", 
+        "title": "CD4 T lymphocyte count and the radiographic presentation of pulmonary tuberculosis. A study of the relationship between these factors in patients with human immunodeficiency virus infection."
+    }, 
+    {
+        "abstract": "Our purpose was to determine interobserver variability in the interpretation of the shape of the acromion on sagittal oblique MR images and conventional radiographs. The shape of the acromion was defined according to a previously described classification scheme.\nWe reviewed 26 sets of sagittal oblique MR images and corresponding conventional Y- or outlet-view radiographs of the shoulder. The shape of the acromion was graded for each study independently by four reviewers. Interobserver agreement was measured by using the kappa statistic. Analysis of variance and the chi 2-test were used for univariate analysis.\nThe acromion was interpreted most often as being curved. The observers scored 9% of MR images and 28% of conventional radiographs as nondiagnostic (p < .001) (41% of transscapular Y views and 3% of supraspinatus outlet views were also considered nondiagnostic [p < .0001]). Kappa values were .23 for MR images and .43 for conventional radiographs. Variability in interpretation between techniques when controlled for observer was not statistically significant.\nAlthough sagittal oblique MR images were significantly more likely than conventional radiographs to be considered diagnostic by observers, interobserver agreement for MR examinations was poor. There was moderate agreement with conventional radiographs. This calls into question the usefulness of the previous system of interpretation and suggests that it might be more applicable with conventional radiographs than with MR images.", 
+        "authors": [
+            "Haygood TM", 
+            "Langlotz CP", 
+            "Kneeland JB", 
+            "Iannotti JP", 
+            "Williams GR", 
+            "Dalinka MK"
+        ], 
+        "journal": "AJR Am J Roentgenol", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/8192003", 
+        "title": "Categorization of acromial shape: interobserver variability with MR imaging and conventional radiography."
+    }, 
+    {
+        "abstract": "We distinguish axiomatically-based expert systems, whose design and implementation are guided by one or more axiomatically-based theories of decision-making (e.g., decision theory, Bayesian probability theory, maximum entropy theory), from traditional expert systems. An analysis of the knowledge acquisition and computational needs of axiomatically-based expert systems is presented. An explicit quantitative comparison is made between the actual knowledge acquisition effort required to build an existing expert system, and the effort that would be required to build an analogous axiomatically-based advice system. The costs and benefits of the axiomatic approach are discussed. The analysis suggests that the small additional cost of knowledge acquisition for the axiomatic approach are outweighed by the long-term benefits this approach provides.", 
+        "authors": [
+            "Langlotz CP"
+        ], 
+        "journal": "Comput Methods Programs Biomed", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/2684496", 
+        "title": "The feasibility of axiomatically-based expert systems."
+    }, 
+    {
+        "abstract": "Decision analysis is an appealing methodology with which to provide decision support to the practicing physician. However, its use in the clinical setting is impeded because computer-based explanations of decision-theoretic advice are difficult to generate without resorting to mathematical arguments. Nevertheless, human decision analysts generate useful and intuitive explanations based on decision trees. To facilitate the use of decision theory in a computer-based decision support system, the authors developed a computer program that uses symbolic reasoning techniques to generate nonquantitative explanations of the results of decision analyses. A combined approach has been implemented to explain the differences in expected utility among branches of a decision tree. First, the mathematical relationships inherent in the structure of the tree are used to find any asymmetries in tree structure or inequalities among analogous decision variables that are responsible for a difference in expected utility. Next, an explanation technique is selected and applied to the most significant variables, creating a symbolic expression that justifies the decision. Finally, the symbolic expression is converted to English-language text, thereby generating an explanation that justifies the desirability of the choice with the greater expected utility. The explanation does not refer to mathematical formulas, nor does it include probability or utility values. The results suggest that explanations produced by a combination of decision analysis and symbolic processing techniques may be more persuasive and acceptable to clinicians than those produced by either technique alone.", 
+        "authors": [
+            "Langlotz CP", 
+            "Shortliffe EH", 
+            "Fagan LM"
+        ], 
+        "journal": "Med Decis Making", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/3185181", 
+        "title": "A methodology for generating computer-based explanations of decision-theoretic advice."
+    }, 
+    {
+        "abstract": "Through our experience with the ONCOCIN cancer therapy consultation system, we have identified a set of medical planning problems to which no single existing computer-based reasoning technique readily applies. In response to the need for automated assistance with this class of problems, we have devised a computer program called ONYX that combines decision-theoretic and artificial intelligence approaches to planning. We discuss our rationale for devising a new planning architecture and describe in detail how that architecture is implemented. The program's planning process consists of three steps: (i) the use of rules derived from therapy planning strategies to generate a small set of plausible plans, (ii) the use of knowledge about the structure and behavior of the human body to create simulations that predict possible consequences of each plan for the patient, and (iii) the use of decision theory to rank the plans according to how well the results of each simulation meet the treatment goals. This architecture explicitly manages the uncertainty inherent in many planning tasks, introduces a possible mechanism for the dissemination of decision-theoretic therapy advice, and potentially increases the number of problem solving domains in which expert system techniques can be effectively applied.", 
+        "authors": [
+            "Langlotz CP", 
+            "Fagan LM", 
+            "Tu SW", 
+            "Sikic BI", 
+            "Shortliffe EH"
+        ], 
+        "journal": "Comput. Biomed. Res.", 
+        "pubmedUrl": "http://www.ncbi.nlm.nih.gov/pubmed/3301187", 
+        "title": "A therapy planning architecture that combines decision theory and artificial intelligence techniques."
+    }
+]

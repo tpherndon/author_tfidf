@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+{% block page_title %}Search{% endblock %}
+{% block header %}
+<h1>Search</h1>
+{% endblock %}
+{% block main %}
+<form action="" method="post">
+    {% csrf_token %}
+    <input  id="search_input" type="search" name="q" placeholder="Type search terms here"></input>
+    <input type="submit"></input>
+</form>
+
+<div id="livesearch"></div>
+
+{% if articles %}
+<h2>Results for terms: {% for term in query_terms %}<em>{{ term }}</em>{% if forloop.last %}{% else %}, {% endif %}{% endfor %}</h2>
+<ul>
+    {% for article in articles %}
+    <li><a href="{{ article.get_absolute_url }}">{{ article.title }}</a></li>
+    {% endfor %}
+</ul>
+<h3>{{ articles|length }} of {{ total_documents }} total articles</h3>
+<h2>Average TF-IDF per Author</h2>
+<div id="legendary"></div><div id="flot_plot"></div>
+{% endif %}
+
+{% if query_terms and not articles %}
+<h2>No results were found for your search for: {% for term in query_terms %}<em>{{ term }}</em>{% if forloop.last %}{% else %}, {% endif %}{% endfor %}</h2>
+{% endif %}
+
+{% endblock main %}
+{% block body_javascript %}
+{{ block.super }}
+<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="{{ STATIC_URL}}js/libs/excanvas.min.js"></script><![endif]-->
+<script language="javascript" type="text/javascript" src="{{ STATIC_URL }}js/libs/jquery.flot.min.js"></script> 
+<script language="javascript" type="text/javascript" src="{{ STATIC_URL }}js/libs/jquery.flot.resize.min.js"></script> 
+<script type="text/javascript">
+    $(function () {
+        {% for author, average in author_averages %}
+        var d{{ forloop.counter }} =  [[ {{ forloop.counter }}, {{ average }} ]{% if forloop.last %}{% else %}, {% endif %}];
+        {% endfor %}
+        var placeholder = $("#flot_plot");
+        var plot = $.plot($(placeholder), [ 
+            {% for author, average in author_averages %}
+            { label: "{{ author }}", data: d{{ forloop.counter }}, bars: { show: true } }{% if forloop.last %}{% else %}, {% endif %} 
+            {% endfor %}
+            ],
+            {
+                xaxis: { show: false },
+                grid: { backgroundColor: { colors: ["#fff", "#eee"]}},
+                legend: { container: "#legendary"}
+            }
+            );
+});
+</script>
+<script type="text/javascript">
+    var runningRequest = false;
+    var request;
+   //Identify the typing action
+    $('#search_input').keyup(function(e){
+        e.preventDefault();
+        var $q = $(this);
+
+        if($q.val() == ''){
+            $('#livesearch').html('');
+            return false;
+        }
+
+        //Abort opened requests to speed it up
+        if(runningRequest){
+            request.abort();
+        }
+
+        runningRequest=true;
+        request = $.getJSON('{% url autosearch %}',{
+            q:$q.val()
+        },function(data){           
+            console.log("data: " + data);
+            showResults(data,$q.val());
+            runningRequest=false;
+        });
+
+//Create HTML structure for the results and insert it on the result div
+function showResults(data, highlight){
+    var resultHtml = '<ul>';
+            $.each(data, function(i,item){
+                resultHtml+='<li><a href="' + item.url + '">'+item.title+'</a></li>';
+            });
+            resultHtml += '</ul>';
+
+            $('#livesearch').html(resultHtml);
+        }
+
+       /* $('form').submit(function(e){
+            e.preventDefault(); 
+        }); */
+    });
+</script>
+
+{% endblock %}
